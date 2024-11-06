@@ -54,7 +54,7 @@ const Section = () => {
         />
       </div>
 
-      <h3 className="mt-[38px] max-w-[339px] font-medium text-lg text-white z-20 text-center">
+      <h3 className="mt-[38px] z-10 max-w-[339px] font-medium text-lg text-white text-center">
         Trusted by the best brands around the world
       </h3>
 
