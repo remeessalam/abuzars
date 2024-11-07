@@ -1,4 +1,5 @@
 import Section from "./Sections/Section";
+import SectionThree from "./Sections/SectionThree";
 import SectionTwo from "./Sections/SectionTwo";
 
 const AboutPage = () => {
@@ -6,6 +7,7 @@ const AboutPage = () => {
     <>
       <Section />
       <SectionTwo />
+      <SectionThree />
     </>
   );
 };
