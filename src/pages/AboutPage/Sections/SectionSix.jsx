@@ -3,7 +3,7 @@ import Button from "../../../component/Button/Button";
 const SectionSix = () => {
   return (
     <div
-      className="flex flex-col justify-center items-center md:w-[95%] lg:w-[80%] text-white w-full mx-auto h-[345px] bg-cover bg-center"
+      className="flex mt-12 flex-col justify-center items-center md:w-[95%] lg:w-[80%] text-white w-full mx-auto h-[345px] bg-cover bg-center"
       style={{ backgroundImage: `url(${aboutpagesectionsixbg})` }}
     >
       <div>
