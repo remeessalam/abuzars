@@ -7,8 +7,7 @@ import setting from "../../../assets/svg/setting.svg";
 import Button from "../../../component/Button/Button";
 const SectionTwo = () => {
   return (
-    <div className="md:mt-[120px] mt-[60px] w-full h-full relative z-10">
-
+    <div className="md:w-[95%] lg:w-[80%] w-full mx-auto md:mt-[120px] mt-[60px]  h-full relative z-10">
       <div className="flex-col md:flex-row justify-center items-center md:justify-normal md:items-start flex h-full">
         <div className="md:w-1/2 w-3/4 min-h-full my-auto transition-all duration-500">
           <img
@@ -78,7 +77,7 @@ const SectionTwo = () => {
           <img
             src={sectionTwoImageTwo}
             alt=""
-            className="w-[552px] h-[360px]"
+            className="w-[552px] h-[360px] object-contain"
           />
         </div>
         <div className="flex relative flex-col lg:pb-12 pb-0 justify-end lg:ml-[96px] h-[100%] mt-8 lg:mt-0 ml-0 gap-2 text-white md:w-1/2 w-3/4 lg:h-[535px]">
@@ -171,7 +170,7 @@ const SectionTwo = () => {
           <img
             src={sectionTwoImageAR}
             alt="sectionTwoImageAR"
-            className="rounded-2xl w-[552px] h-[389px]"
+            className="rounded-2xl w-[552px] h-[389px] object-contain"
           />
         </div>
       </div>

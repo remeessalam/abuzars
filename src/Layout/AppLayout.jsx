@@ -8,7 +8,7 @@ const AppLayout = () => {
       <div className="flex flex-col justify-center  relative ">
         <Header />
         <div className="relative top-28 left-0">
-          <div className="">
+          <div className="overflow-hidden">
             <Outlet />
           </div>
         </div>
