@@ -95,7 +95,7 @@ const SectionTwo = () => {
           <p className="text-sm font-normal  md:w-[91% w-full sm:pl-[58px] text-[#BABCC6]">
             At BlueBillionaire.ai,we provide cutting-edge blockchain development
             services that revolutionize the decentralised operation, security,
-            and transparency of your company's operations. Our expertise
+            and transparency of your company&rsquo;s operations. Our expertise
             includes developing secure smart contracts, cutting-edge
             decentralised apps, and bespoke cryptocurrency solutions—all
             meticulously crafted to enable your company to take the fully
@@ -136,9 +136,9 @@ const SectionTwo = () => {
           <p className="text-sm font-normal text-[#BABCC6] w-full max-w-[500px] mt-[17px] sm:pl-[58px]">
             with our cutting-edge AR/VR solutions. We create immersive
             environments that allow users to interact with your products and
-            services in innovative and exciting ways. Whether it's enhancing
-            training programs, creating virtual tours, or developing engaging
-            marketing experiences, our AR/VR technology drives customer
+            services in innovative and exciting ways. Whether it&rsquo;s
+            enhancing training programs, creating virtual tours, or developing
+            engaging marketing experiences, our AR/VR technology drives customer
             engagement and significantly boosts sales. Let us help you bridge
             the gap between the digital and physical worlds to create
             unforgettable experiences.
