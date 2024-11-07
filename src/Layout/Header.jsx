@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Logo from "../assets/svg/Logo.svg";
 import menuIcon from "../assets/svg/menuIcon.svg";
+import Button from "../component/Button/Button";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
@@ -25,8 +26,9 @@ const Header = () => {
             </ul>
           </div>
           <div className="text gap-4  justify-end md:flex hidden ">
-            <button>Sign in</button>
-            <button>Get Started</button>
+            <Button buttonName={"Sign in"} style={""} border={false} />
+            <Button buttonName={"Get Started"} style={""} border={true} />
+            {/* <button>Get Started</button> */}
           </div>
           <div
             className="md:hidden flex pr-5"

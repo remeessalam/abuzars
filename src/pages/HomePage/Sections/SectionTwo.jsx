@@ -4,6 +4,7 @@ import sectionTwoImageAR from "../../../assets/images/sectionTwoImageAR.jpg";
 import roundedHeart from "../../../assets/svg/roundedHeart.svg";
 import chinese from "../../../assets/svg/chinese.svg";
 import setting from "../../../assets/svg/setting.svg";
+import Button from "../../../component/Button/Button";
 const SectionTwo = () => {
   return (
     <div className="md:mt-[120px] mt-[60px] w-full h-full">
@@ -26,16 +27,23 @@ const SectionTwo = () => {
             premium website design and exceptional services that exemplify our
             dedication to quality and excellence.
           </p>
-          <p className="text-sm font-normal text-[#BABCC6]">
+          <p className="text-sm font-normal text-[#BABCC6] mb-8">
             We recognize that every business is unique, and our approach is
             rooted in a deep understanding of your specific needs and
             challenges. By doing so, we provide customized solutions that not
             only meet your expectations but also drive measurable results that
             can significantly impact your bottom line.
           </p>
-          <button className="mt-8 text-white items-start w-fit">
+          {/* <button className="mt-8 text-white items-start w-fit">
             Get Started
-          </button>
+          </button> */}
+          <div>
+            <Button
+              buttonName="Get Started"
+              border={true}
+              divStyle={"max-w-[200px]"}
+            />
+          </div>
         </div>
       </div>
 

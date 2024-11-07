@@ -1,4 +1,5 @@
 import bg from "../../../assets/png/sectionfourbg.png";
+import Button from "../../../component/Button/Button";
 const SectionFour = () => {
   return (
     <div className="w-full relative mt-40 h-[634px]">
@@ -19,7 +20,15 @@ const SectionFour = () => {
             BlueBillionaire.ai, we don’t just process data—we unleash its
             transformative power.
           </p>
-          <button className="mt-8">Get Started</button>
+          {/* <button className="mt-8">Get Started</button> */}
+          <div className="w-full justify-center mt-6">
+            <Button
+              buttonName="Get Started"
+              border={true}
+              style={""}
+              divStyle={"w-[200px]"}
+            />
+          </div>
         </div>
       </div>
       <div className="w-full h-20 bg-[#121739]" />

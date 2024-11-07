@@ -7,6 +7,7 @@ import messengericon from "../../../assets/svg/messenger.svg";
 import pintersticon from "../../../assets/svg/pinterest.svg";
 import twitericon from "../../../assets/svg/twitter.svg";
 import googleicon from "../../../assets/svg/google.svg";
+import Button from "../../../component/Button/Button";
 const SectionSeven = () => {
   return (
     <div className="w-full lg:justify-between items-center  gap-2 flex-col lg:flex-row flex mt-20">
@@ -68,7 +69,8 @@ const SectionSeven = () => {
           into opportunities and creating a brighter, more prosperous future for
           your organization.
         </p>
-        <button className="text-white">Contact us</button>
+        <Button buttonName="Contact us" border={false} />
+        {/* <button className="text-white">Contact us</button> */}
       </div>
       <div className="relative lg:w-1/3 md:w-1/2 w-[80%] h-[405px]">
         <div className="absolute  top-6 left-0 flex justify-center items-center w-[66px] h-[66px] rounded-full border shadow-10xl shadow-white">

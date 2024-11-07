@@ -1,6 +1,7 @@
 import homeicon from "../../../assets/png/homePageBackground.png";
 import homePageImage1 from "../../../assets/images/homePageImage1.jpeg";
 import homePageBottomImage from "../../../assets/images/homePageBottomImage.jpeg";
+import Button from "../../../component/Button/Button";
 const Section = () => {
   return (
     <div
@@ -30,9 +31,11 @@ const Section = () => {
             its transformative power.
           </p>
         </div>
-        <div className="flex justify-center h-[43px] border mt-[24px]">
-          <button>Get started</button>
-          <button>Lern more</button>
+        <div className="flex justify-center h-[43px] gap-3 mt-[24px]">
+          {/* <button>Get started</button>
+          <button>Lern more</button> */}
+          <Button buttonName={"Get started"} border={true} />
+          <Button buttonName={"Learn more"} border={false} />
         </div>
       </div>
       <div className="flex flex-col items-center mt-[80px]  z-10">
