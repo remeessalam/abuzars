@@ -7,7 +7,8 @@ import setting from "../../../assets/svg/setting.svg";
 import Button from "../../../component/Button/Button";
 const SectionTwo = () => {
   return (
-    <div className="md:mt-[120px] mt-[60px] md:w-[95%] lg:w-[80%] w-full mx-auto h-full">
+    <div className="md:mt-[120px] mt-[60px] w-full h-full relative z-10">
+
       <div className="flex-col md:flex-row justify-center items-center md:justify-normal md:items-start flex h-full">
         <div className="md:w-1/2 w-3/4 min-h-full my-auto transition-all duration-500">
           <img
