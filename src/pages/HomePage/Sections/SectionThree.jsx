@@ -110,7 +110,7 @@ const SectionThree = () => {
           <div>
             <img src={cloud} alt="cloud" />
             <h4 className="text-2xl font-medium mt-4">
-              Customized Solution Development{" "}
+              Customized Solution Development
             </h4>
           </div>
           <p className="text-sm font-normal mt-2 text-[#BABCC6] max-w-[318px] pl-[18px]">
