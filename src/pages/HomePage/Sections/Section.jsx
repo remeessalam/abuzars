@@ -31,12 +31,13 @@ const Section = () => {
 
   return (
     <div
-      className="relative flex justify-center items-center flex-col md:w-[95%] lg:w-[80%] w-full mx-auto  min-h-full bg-[#080719] text-white overflow-hidden"
+      className="relative flex justify-center items-center bg-cover bg-center flex-col  w-screen mx-auto  min-h-full bg-[#080719] text-white overflow-hidden"
       // bg-top bg-[length:100%_570px]
+      style={{ backgroundImage: `url(${homeicon})` }}
     >
-      <div className="absolute -top-[16%] w-full opacity-100 z-0 h-full">
+      {/* <div className="absolute -top-[16%] w-full opacity-100 z-0 h-full">
         <img src={homeicon} alt="" className="w-full align-middle h-full" />
-      </div>
+      </div> */}
       <div className="flex flex-col z-10 overflow-hidden">
         <div className="flex justify-center">
           <h3 className="text-[#F5F5F5] text-[10px] rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white">
@@ -49,7 +50,7 @@ const Section = () => {
           </h2>
         </div>
         <div className="flex justify-center mt-[58px]">
-          <p className="max-w-[718px] text-center text-sm text-[#BABCC6]">
+          <p className="max-w-[718px] text-center px-2 sm:px-0 text-sm text-[#BABCC6]">
             Where Data Meets Innovation: Empowering Your Business with Smart
             Insights <br /> Imagine a world where data transcends mere numbers
             to become the key that unlocks limitless possibilities.
@@ -65,25 +66,25 @@ const Section = () => {
         </div>
       </div>
       <div className="flex flex-col items-center mt-[80px]  z-10">
-        <div className="h-[365px] overflow-hidden w-[77.1%]">
+        <div className="h-[365px] overflow-hidden w-[95%] md:w-[77.1%]">
           <img
-            className="rounded-t-[82px] h-[420px] w-full"
+            className="rounded-t-[50px] md:rounded-t-[82px] h-[420px] w-full object-cover"
             src={homePageImage1}
             alt="homePageImage1"
             // width={780}
             // height={520}
           />
         </div>
-        <div className="bg-[#080719] h-[100px] " />
+        <div className="bg-[#080719] h-[100px] w-[95%] md:w-[77.1%]" />
         {/* w-[780px] */}
         <img
           src={homePageBottomImage}
           alt="homePageBottomImage"
-          //   className="w-[780px]"
+          className="w-[95%] md:w-[77.1%]"
         />
       </div>
 
-      <h3 className="mt-[38px] z-10 max-w-[339px] font-medium text-lg text-white text-center">
+      <h3 className="mt-[38px] px-2 sm:px-0 z-10 max-w-[339px] font-medium text-lg text-white text-center">
         Trusted by the best brands around the world
       </h3>
 

@@ -4,17 +4,15 @@ import sectionthreeimagetwo from "../../../assets/images/sectionthreeimagetwo.jp
 import sectionthreeimagethree from "../../../assets/images/sectionthreeimagethree.png";
 import cloud from "../../../assets/svg/cloud.svg";
 import setting from "../../../assets/svg/setting.svg";
+import tick from "../../../assets/svg/tick.svg";
 
 const SectionThree = () => {
   return (
-
     <div
       className="relative flex flex-col items-center text-white md:pt-[120px] pt-[60px]"
       // style={{ backgroundImage: `url(${homeicon})` }}
     >
       <div className="absolute -top-[12rem] w-screen opacity-100 z-0 h-full">
-
-   
         <img
           src={homeicon}
           alt="homeicon"
@@ -40,8 +38,7 @@ const SectionThree = () => {
         </p>
       </div>
       <div className="flex justify-center w-full">
-        <div className="relative flex justify-center z-10 mt-[51px] px-4"
-        >
+        <div className="relative flex justify-center z-10 mt-[51px] px-4">
           <img
             src={sectionthreeimageone}
             alt="AI image"
@@ -115,14 +112,14 @@ const SectionThree = () => {
           />
         </div>
 
-        <div className="relative">
-          <div>
-            <img src={cloud} alt="cloud" />
-            <h4 className="text-2xl font-medium mt-4">
+        <div className="relative px-3 sm:px-0">
+          <div className="flex flex-col  sm:items-start items-center">
+            <img src={tick} alt="cloud" className="w-[40px]" />
+            <h4 className="text-2xl font-medium mt-4 text-center">
               Customized Solution Development
             </h4>
           </div>
-          <p className="text-sm font-normal mt-2 text-[#BABCC6] max-w-[318px] pl-[18px]">
+          <p className="text-sm font-normal mt-2  text-center text-[#BABCC6] max-w-[318px] pl-[18px]">
             Based on Client needs, we recommend a solution from their service
             offerings from our Wide Range of Services
           </p>
