@@ -4,24 +4,28 @@ import sectionthreeimagetwo from "../../../assets/images/sectionthreeimagetwo.jp
 import sectionthreeimagethree from "../../../assets/images/sectionthreeimagethree.png";
 import cloud from "../../../assets/svg/cloud.svg";
 import setting from "../../../assets/svg/setting.svg";
+
 const SectionThree = () => {
   return (
-    <div className="relative flex flex-col items-center text-white md:mt-[120px] mt-[60px]">
-      <div className="absolute -top-[16%] w-full opacity-100 z-0 h-full">
+    <div
+      className="relative flex flex-col items-center text-white md:pt-[120px] pt-[60px]"
+      // style={{ backgroundImage: `url(${homeicon})` }}
+    >
+      <div className="absolute -top-[12rem] w-screen opacity-100 z-0 h-full">
         <img
           src={homeicon}
           alt="homeicon"
-          className="w-full align-middle h-full"
+          className="w-screen h-full object-cover"
         />
       </div>
       <div>
-        <h3 className="text-[#F5F5F5] text-[10px] w-fit rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white z-10">
+        <h3 className="text-[#F5F5F5] relative z-10 text-[10px] w-fit rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white">
           {"Our solution".toUpperCase()}
         </h3>
       </div>
       <div className="mt-3 z-10">
         <h2 className="text-[54px] text-center leading-[65px]">
-          Meet Our process
+          Meet Our Process
         </h2>
       </div>
       <div className="mt-3 z-10">
@@ -33,21 +37,23 @@ const SectionThree = () => {
         </p>
       </div>
       <div className="flex justify-center w-full">
-        <div className="relative flex justify-center z-10 mt-[51px]  w-[90vw]">
+        <div className="relative flex justify-center z-10 mt-[51px] px-4"
+        >
           <img
             src={sectionthreeimageone}
             alt="AI image"
-            className=" rounded-2xl w-[78%] h-[365px]"
+            // className="rounded-2xl w-[70%] h-[50vh] object-top object-cover"
+            className="rounded-2xl h-[20rem] sm:h-[50vh] w-full object-top object-cover"
           />
           <img
             src={sectionthreeimagetwo}
             alt="AI image"
-            className="absolute -bottom-[75px] -left-[4.5rem] opacity-55 rounded-2xl w-[32%] h-[260px]"
+            className="absolute -bottom-2 sm:-bottom-[3rem] left-2 md:-left-[1rem] lg:-left-[6.5rem] opacity-75 rounded-2xl w-[6rem] sm:w-[12rem] object-contain aspect-square"
           />
           <img
             src={sectionthreeimagethree}
             alt="AI image"
-            className="absolute -right-[115px] top-12 opacity-70 rounded-2xl w-[40%] h-[190px]"
+            className="absolute right-6 md:-right-[1rem] lg:-right-[6rem] top-2 sm:top-12 opacity-95 rounded-2xl w-[8rem] sm:w-[12rem] object-contain"
           />
         </div>
       </div>
