@@ -1,4 +1,5 @@
 import Section from "./Sections/Section";
+import SectionFour from "./Sections/SectionFour";
 import SectionThree from "./Sections/SectionThree";
 import SectionTwo from "./Sections/SectionTwo";
 const HomePage = () => {
@@ -7,6 +8,7 @@ const HomePage = () => {
       <Section />;
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
     </>
   );
 };
