@@ -54,15 +54,26 @@ const Header = () => {
       {/* {openMenu && ( */}
       <div
         className={`${
-          openMenu ? `h-[329px] flex` : `h-0 hidden`
+          openMenu ? `h-[329px] flex flex-col` : `h-0 hidden`
         } transition-all duration-700 bg-[#080719] w-full text-white border-y border-[#505362]`}
       >
         <ul className="flex flex-col w-full h-full p-6 justify-between">
-          <li className="w-full">Home</li>
-          <li>About</li>
+          <li className="w-full">
+            {" "}
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
           <li>Sevices</li>
           <li>Contact</li>
         </ul>
+        <div className="pl-6 pb-6 flex flex-col gap-6">
+          <Button buttonName={"Sign in"} style={""} border={false} />
+          <div>
+            <Button buttonName={"Get Started"} style={""} border={true} />
+          </div>
+        </div>
       </div>
       {/* )} */}
     </div>
