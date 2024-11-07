@@ -5,7 +5,7 @@ import sectioneifhtbg from "../../../assets/images/sectioneifhtbg.jpeg";
 import Button from "../../../component/Button/Button";
 const SectionEight = () => {
   return (
-    <div className="w-full text-white flex-col flex items-center mt-28">
+    <div className="md:w-[95%] lg:w-[80%] w-full mx-auto text-white flex-col flex items-center mt-28">
       <div>
         {" "}
         <h3 className="text-[#F5F5F5] text-[10px] w-fit rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white z-10">

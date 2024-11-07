@@ -10,7 +10,7 @@ import googleicon from "../../../assets/svg/google.svg";
 import Button from "../../../component/Button/Button";
 const SectionSeven = () => {
   return (
-    <div className="w-full lg:justify-between items-center  gap-2 flex-col lg:flex-row flex mt-20">
+    <div className="md:w-[95%] lg:w-[80%] w-full mx-auto lg:justify-between items-center  gap-2 flex-col lg:flex-row flex mt-20">
       <div className="relative lg:w-1/3 md:w-1/2 w-[80%] h-[405px]">
         <div className="absolute flex justify-center items-center w-[106px] h-[106px] rounded-full border shadow-10xl shadow-white">
           <img

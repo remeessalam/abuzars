@@ -4,7 +4,7 @@ import Button from "../../../component/Button/Button";
 const Section = () => {
   return (
     <div
-      className="relative flex justify-center items-center flex-col w-full min-h-full bg-[#080719] text-white overflow-hidden"
+      className="relative flex justify-center items-center flex-col  min-h-full bg-[#080719] text-white overflow-hidden md:w-[95%] lg:w-[80%] w-full mx-auto"
       // bg-top bg-[length:100%_570px]
     >
       <div className="absolute -top-[16%] w-screen opacity-100 z-0 h-[545px]">

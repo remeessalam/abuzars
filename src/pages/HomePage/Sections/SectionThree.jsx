@@ -6,7 +6,7 @@ import cloud from "../../../assets/svg/cloud.svg";
 import setting from "../../../assets/svg/setting.svg";
 const SectionThree = () => {
   return (
-    <div className="relative flex flex-col items-center text-white md:mt-[120px] mt-[60px]">
+    <div className="relative flex flex-col md:w-[95%] lg:w-[80%] w-full mx-auto items-center text-white md:mt-[120px] mt-[60px]">
       <div className="absolute -top-[16%] w-full opacity-100 z-0 h-full">
         <img
           src={homeicon}
