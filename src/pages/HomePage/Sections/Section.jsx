@@ -1,6 +1,7 @@
 import homeicon from "../../../assets/png/homePageBackground.png";
 import homePageImage1 from "../../../assets/images/homePageImage1.jpeg";
 import homePageBottomImage from "../../../assets/images/homePageBottomImage.jpeg";
+import Component from "../../../assets/svg/Component4.svg";
 import Button from "../../../component/Button/Button";
 const Section = () => {
   return (
@@ -61,8 +62,13 @@ const Section = () => {
         Trusted by the best brands around the world
       </h3>
 
-      <div className="w-[500px] bg-violet-600 h-[28px] mt-[24px]">
-        some animation
+      <div className="flex gap-3  h-[28px] mt-[24px]">
+        <img src={Component} alt="" />
+        <img src={Component} alt="" />
+        <img src={Component} alt="" />
+        <img src={Component} alt="" />
+        <img src={Component} alt="" />
+        <img src={Component} alt="" />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Logo from "../assets/svg/Logo.svg";
 import menuIcon from "../assets/svg/menuIcon.svg";
 import Button from "../component/Button/Button";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
@@ -19,8 +20,12 @@ const Header = () => {
           </div>
           <div className="md:flex hidden ">
             <ul className="flex gap-10">
-              <li>Home</li>
-              <li>About</li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
               <li>Services</li>
               <li>Contact</li>
             </ul>
