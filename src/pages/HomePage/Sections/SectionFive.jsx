@@ -2,7 +2,7 @@ import profileImage from "../../../assets/images/profileimage.jpeg";
 import vector from "../../../assets/svg/vector.svg";
 const SectionFive = () => {
   return (
-    <div className="w-full flex-col flex items-center mt-20 text-white">
+    <div className="md:w-[95%] lg:w-[80%] w-full mx-auto flex-col flex items-center mt-20 text-white">
       <div>
         <h3 className="text-[#F5F5F5] text-[10px] w-fit rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white z-10">
           {"Testimonials".toUpperCase()}

@@ -7,11 +7,14 @@ import setting from "../../../assets/svg/setting.svg";
 
 const SectionThree = () => {
   return (
+
     <div
       className="relative flex flex-col items-center text-white md:pt-[120px] pt-[60px]"
       // style={{ backgroundImage: `url(${homeicon})` }}
     >
       <div className="absolute -top-[12rem] w-screen opacity-100 z-0 h-full">
+
+   
         <img
           src={homeicon}
           alt="homeicon"

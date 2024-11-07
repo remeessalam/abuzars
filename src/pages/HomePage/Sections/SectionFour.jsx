@@ -2,7 +2,7 @@ import bg from "../../../assets/png/sectionfourbg.png";
 import Button from "../../../component/Button/Button";
 const SectionFour = () => {
   return (
-    <div className="w-full relative mt-40 h-[634px]">
+    <div className="md:w-[95%] lg:w-[80%] w-full mx-auto relative mt-40 h-[634px]">
       <div className="absloute top-0">
         <img src={bg} alt="Backgroun-Image" className="h-[354px]" />
       </div>
