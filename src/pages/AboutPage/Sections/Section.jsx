@@ -22,7 +22,7 @@ const Section = () => {
       s.moveToIdx(s.track.details.abs + 5, true, animation);
     },
     slides: {
-      perView: 5,
+      perView: 7,
       spacing: 10,
     },
   });

@@ -58,14 +58,14 @@ const SectionThree = () => {
         </div>
       </div>
       <div className="w-full flex flex-wrap gap-10 z-10 mt-28 justify-center">
-        <div className="relative">
-          <div>
-            <img src={cloud} alt="cloud" />
-            <h4 className="text-2xl font-medium mt-4">
+        <div className="relative px-3 sm:px-0">
+          <div className="flex flex-col  sm:items-start items-center">
+            <img src={cloud} alt="cloud" className="w-[40px]" />
+            <h4 className="text-2xl font-medium mt-4 text-center">
               Understanding Your Needs
             </h4>
           </div>
-          <p className="text-sm font-normal mt-2 text-[#BABCC6] max-w-[318px] pl-[18px]">
+          <p className="text-sm font-normal sm:text-start text-center mt-2 text-[#BABCC6] max-w-[318px] pl-[18px]">
             They emphasize building strong partnerships and ensure open
             communication throughout the project lifecycle.
           </p>
@@ -85,14 +85,14 @@ const SectionThree = () => {
           />
         </div>
 
-        <div className="relative ">
-          <div>
-            <img src={setting} alt="setting" />
-            <h4 className="text-2xl font-medium mt-4">
+        <div className="relative px-3 sm:px-0">
+          <div className="flex flex-col  sm:items-start items-center">
+            <img src={setting} alt="setting" className="w-[40px]" />
+            <h4 className="text-2xl font-medium mt-4 text-center">
               Data Acquisition and Analysis
             </h4>
           </div>
-          <p className="text-sm font-normal mt-2 text-[#BABCC6] max-w-[318px] pl-[18px]">
+          <p className="text-sm font-normal mt-2 sm:text-start text-center text-[#BABCC6] max-w-[318px] pl-[18px]">
             Their AI expertise focuses on analyzing unstructured data to
             generate actionable insights
           </p>
@@ -119,7 +119,7 @@ const SectionThree = () => {
               Customized Solution Development
             </h4>
           </div>
-          <p className="text-sm font-normal mt-2  text-center text-[#BABCC6] max-w-[318px] pl-[18px]">
+          <p className="text-sm font-normal mt-2   sm:text-start text-center text-[#BABCC6] max-w-[318px] pl-[18px]">
             Based on Client needs, we recommend a solution from their service
             offerings from our Wide Range of Services
           </p>
