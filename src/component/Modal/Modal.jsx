@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import PropTypes from "prop-types";
 
 let serviceDetails = [
   {
@@ -127,6 +128,11 @@ const Modal = ({ closeModal, index }) => {
       </div>
     </div>
   );
+};
+
+Modal.propTypes = {
+  closeModal: PropTypes.func.isRequired,
+  index: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
 
 export default Modal;
