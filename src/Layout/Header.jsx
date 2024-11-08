@@ -64,23 +64,22 @@ const Header = () => {
         } transition-all duration-700 bg-[#080719] w-full text-white border-y border-[#505362]`}
       >
         <ul className="flex flex-col w-full h-full p-6 justify-between">
-          <li className="w-full">
-            {" "}
+          <li className="w-full " onClick={() => setOpenMenu(false)}>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="w-full " onClick={() => setOpenMenu(false)}>
             <Link to="/about">About</Link>
           </li>
-          <li>
+          <li className="w-full " onClick={() => setOpenMenu(false)}>
             <Link to="/services">Sevices</Link>
           </li>
-          <li>
+          <li className="w-full " onClick={() => setOpenMenu(false)}>
             <Link to="/contactus"> Contact</Link>
           </li>
         </ul>
         <div className="pl-6 pb-6 flex flex-col gap-6">
           {/* <Button buttonName={"Sign in"} style={""} border={false} /> */}
-          <div>
+          <div onClick={() => setOpenMenu(false)}>
             <Link to="/contactus">
               <Button buttonName={"Get Started"} style={""} border={true} />
             </Link>
