@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import aboutpagesectionsixbg from "../../../assets/images/aboutpagesectionsixbg.png";
 import Button from "../../../component/Button/Button";
 const SectionSix = () => {
@@ -21,7 +22,9 @@ const SectionSix = () => {
           className="bg-transparent w-[60%] border-none focus:outline-none focus:ring-0 truncate"
           placeholder="Enter your email address"
         />
-        <Button buttonName="Join us" border={true} />
+        <Link to="/contactus">
+          <Button buttonName="Join us" border={true} />
+        </Link>
       </div>
     </div>
   );

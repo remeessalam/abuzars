@@ -8,6 +8,7 @@ import pintersticon from "../../../assets/svg/pinterest.svg";
 import twitericon from "../../../assets/svg/twitter.svg";
 import googleicon from "../../../assets/svg/google.svg";
 import Button from "../../../component/Button/Button";
+import { Link } from "react-router-dom";
 const SectionSeven = () => {
   return (
     <div className="md:w-[95%] lg:w-[80%] w-full mx-auto lg:justify-between items-center  gap-2 flex-col lg:flex-row flex mt-20">
@@ -69,7 +70,9 @@ const SectionSeven = () => {
           into opportunities and creating a brighter, more prosperous future for
           your organization.
         </p>
-        <Button buttonName="Contact us" border={false} />
+        <Link to="/contactus">
+          <Button buttonName="Contact us" border={false} />
+        </Link>
         {/* <button className="text-white">Contact us</button> */}
       </div>
       <div className="relative lg:w-1/3 md:w-1/2 w-[80%] h-[405px]">

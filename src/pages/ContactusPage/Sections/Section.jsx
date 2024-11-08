@@ -6,6 +6,7 @@ import roundedtwitter from "../../../assets/svg/roundedtwitter.svg";
 import roundedinstagram from "../../../assets/svg/roundedinstagram.svg";
 import roundedlinkedin from "../../../assets/svg/roundedlinkedin.svg";
 import Button from "../../../component/Button/Button";
+import { Link } from "react-router-dom";
 
 const Section = () => {
   return (
@@ -117,7 +118,9 @@ const Section = () => {
           </div>
           <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-4 lg:gap-0">
             <div>
-              <Button buttonName="Send Message" border={true} />
+              <Link to="/contactus">
+                <Button buttonName="Send Message" border={true} />
+              </Link>
             </div>
             <div className="flex gap-2 pr-0 lg:pr-8">
               <img src={roundedfacebook} alt="roundedfacebook" />

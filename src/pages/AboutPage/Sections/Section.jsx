@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import homeicon from "../../../assets/images/aboutpagesectiononebg.jpeg";
 import Component from "../../../assets/svg/Component4.svg";
 import Button from "../../../component/Button/Button";
@@ -55,8 +56,12 @@ const Section = () => {
           </p>
         </div>
         <div className="flex justify-center h-[43px] gap-3 mt-[24px]">
-          <Button buttonName={"Join us"} border={true} />
-          <Button buttonName={"Learn more"} border={false} />
+          <Link to="/contactus">
+            <Button buttonName={"Join us"} border={true} />
+          </Link>
+          <Link to="/about">
+            <Button buttonName={"Learn more"} border={false} />
+          </Link>
         </div>
       </div>
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bg from "../../../assets/png/sectionfourbg.png";
 import Button from "../../../component/Button/Button";
 const SectionFour = () => {
@@ -23,12 +24,14 @@ const SectionFour = () => {
           </p>
           {/* <button className="mt-8">Get Started</button> */}
           <div className="w-full justify-center mt-2 sm:mt-6">
-            <Button
-              buttonName="Get Started"
-              border={true}
-              style={""}
-              divStyle={"w-[200px]"}
-            />
+            <Link to="/contactus">
+              <Button
+                buttonName="Get Started"
+                border={true}
+                style={""}
+                divStyle={"w-[200px]"}
+              />
+            </Link>
           </div>
         </div>
       </div>

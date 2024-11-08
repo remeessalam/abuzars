@@ -5,6 +5,7 @@ import roundedHeart from "../../../assets/svg/roundedHeart.svg";
 import chinese from "../../../assets/svg/chinese.svg";
 import setting from "../../../assets/svg/setting.svg";
 import Button from "../../../component/Button/Button";
+import { Link } from "react-router-dom";
 const SectionTwo = () => {
   return (
     <div className="md:w-[95%] lg:w-[80%] w-full mx-auto md:mt-[120px] mt-[60px]  h-full relative z-10">
@@ -38,11 +39,13 @@ const SectionTwo = () => {
             Get Started
           </button> */}
           <div>
-            <Button
-              buttonName="Get Started"
-              border={true}
-              divStyle={"max-w-[200px]"}
-            />
+            <Link to="/contactus">
+              <Button
+                buttonName="Get Started"
+                border={true}
+                divStyle={"max-w-[200px]"}
+              />
+            </Link>
           </div>
         </div>
       </div>

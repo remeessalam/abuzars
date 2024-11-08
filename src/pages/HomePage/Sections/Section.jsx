@@ -5,6 +5,7 @@ import Component from "../../../assets/svg/Component4.svg";
 import Button from "../../../component/Button/Button";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import { Link } from "react-router-dom";
 
 const animation = { duration: 20000, easing: (t) => t };
 
@@ -61,8 +62,12 @@ const Section = () => {
         <div className="flex justify-center h-[43px] gap-3 mt-[24px]">
           {/* <button>Get started</button>
           <button>Lern more</button> */}
-          <Button buttonName={"Get started"} border={true} />
-          <Button buttonName={"Learn more"} border={false} />
+          <Link to="/contactus">
+            <Button buttonName={"Get started"} border={true} />
+          </Link>
+          <Link to="/about">
+            <Button buttonName={"Learn more"} border={false} />
+          </Link>
         </div>
       </div>
       <div className="flex flex-col items-center mt-[80px]  z-10">

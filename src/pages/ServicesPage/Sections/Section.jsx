@@ -13,6 +13,7 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Modal from "../../../component/Modal/Modal";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const animation = { duration: 20000, easing: (t) => t };
 
@@ -119,8 +120,12 @@ const Section = () => {
             </p>
           </div>
           <div className="flex justify-center h-[43px] gap-3 mt-[24px]">
-            <Button buttonName={"Get started"} border={true} />
-            <Button buttonName={"Learn more"} border={false} />
+            <Link to="/contactus">
+              <Button buttonName={"Get started"} border={true} />
+            </Link>
+            <Link to="/about">
+              <Button buttonName={"Learn more"} border={false} />
+            </Link>
           </div>
         </div>
       </div>

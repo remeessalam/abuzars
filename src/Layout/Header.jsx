@@ -35,8 +35,10 @@ const Header = () => {
             </ul>
           </div>
           <div className="text gap-4  justify-end md:flex hidden ">
-            <Button buttonName={"Sign in"} style={""} border={false} />
-            <Button buttonName={"Get Started"} style={""} border={true} />
+            {/* <Button buttonName={"Sign in"} style={""} border={false} /> */}
+            <Link to="/contactus">
+              <Button buttonName={"Get Started"} style={""} border={true} />
+            </Link>
             {/* <button>Get Started</button> */}
           </div>
           <div
@@ -77,9 +79,11 @@ const Header = () => {
           </li>
         </ul>
         <div className="pl-6 pb-6 flex flex-col gap-6">
-          <Button buttonName={"Sign in"} style={""} border={false} />
+          {/* <Button buttonName={"Sign in"} style={""} border={false} /> */}
           <div>
-            <Button buttonName={"Get Started"} style={""} border={true} />
+            <Link to="/contactus">
+              <Button buttonName={"Get Started"} style={""} border={true} />
+            </Link>
           </div>
         </div>
       </div>

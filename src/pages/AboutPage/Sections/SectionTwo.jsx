@@ -6,6 +6,7 @@ import badge from "../../../assets/svg/badge.svg";
 import globe from "../../../assets/svg/globe.svg";
 import groupimage from "../../../assets/svg/groupimage.svg";
 import growth from "../../../assets/svg/growth.svg";
+import { Link } from "react-router-dom";
 
 // h-[595px]
 const SectionTwo = () => {
@@ -34,8 +35,12 @@ const SectionTwo = () => {
             innovative, data-driven solutions that drive transformative success
           </p>
           <div className="flex gap-4 mt-4">
-            <Button buttonName="Join us" border={true} />
-            <Button buttonName="Learn more" />
+            <Link to="/contactus">
+              <Button buttonName="Join us" border={true} />
+            </Link>
+            <Link to="/about">
+              <Button buttonName="Learn more" />
+            </Link>
           </div>
         </div>
         <div className="flex gap-3 flex-col justify-center items-center w-full md:w-[45%] py-16">
