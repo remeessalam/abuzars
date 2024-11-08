@@ -7,7 +7,7 @@ import software from "../../../assets/png/software.png";
 import sbc from "../../../assets/png/sbc.png";
 import it from "../../../assets/png/it.png";
 import consulting from "../../../assets/png/consulting.png";
-import bottomimage from "../../../assets/images/homepagebottomimage.jpeg";
+import bottomimage from "../../../assets/images/homePageBottomImage.jpeg";
 import Component from "../../../assets/svg/Component4.svg";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
