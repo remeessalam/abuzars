@@ -2,7 +2,8 @@ import bg from "../../../assets/png/sectionfourbg.png";
 import Button from "../../../component/Button/Button";
 const SectionFour = () => {
   return (
-    <div className="md:w-[95%] lg:w-[80%] w-full mx-auto relative mt-40 h-[634px]">
+    // h-[634px]
+    <div className="md:w-[95%] lg:w-[80%] w-full mx-auto relative mt-40">
       <div className="absloute top-0">
         <img src={bg} alt="Backgroun-Image" className="min-h-[354px]" />
       </div>
@@ -13,7 +14,7 @@ const SectionFour = () => {
             <br /> power <br />
             up your business with AI
           </h3>
-          <p className="text-sm font-normal text-[#BABCC6] max-w-[550px] mx-auto mt-5">
+          <p className="text-sm font-normal text-[#BABCC6] max-w-[550px] mx-auto mt-2 sm:mt-5">
             Where Data Meets Innovation: Empowering Your Business with Smart
             Insights Imagine a world where data transcends mere numbers to
             become the key that unlocks limitless possibilities. At
@@ -21,7 +22,7 @@ const SectionFour = () => {
             transformative power.
           </p>
           {/* <button className="mt-8">Get Started</button> */}
-          <div className="w-full justify-center mt-6">
+          <div className="w-full justify-center mt-2 sm:mt-6">
             <Button
               buttonName="Get Started"
               border={true}

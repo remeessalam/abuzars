@@ -77,7 +77,7 @@ const SectionTwo = () => {
           <img
             src={sectionTwoImageTwo}
             alt=""
-            className="w-[552px] h-[360px] object-contain"
+            className="w-[552px] sm:h-[360px] object-contain"
           />
         </div>
         <div className="flex relative flex-col lg:pb-12 pb-0 justify-end lg:ml-[96px] h-[100%] mt-8 lg:mt-0 ml-0 gap-2 text-white md:w-1/2 w-3/4 lg:h-[535px]">
@@ -170,7 +170,7 @@ const SectionTwo = () => {
           <img
             src={sectionTwoImageAR}
             alt="sectionTwoImageAR"
-            className="rounded-2xl w-[552px] h-[389px] object-contain"
+            className="rounded-2xl w-[552px]  object-contain"
           />
         </div>
       </div>

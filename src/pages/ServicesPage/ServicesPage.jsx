@@ -1,14 +1,14 @@
-import Section from "./Section/Section";
-import SectionThree from "./Section/SectionThree";
-import SectionTwo from "./Section/SectionTwo";
+import Section from "./Sections/Section";
+import SectionThree from "./Sections/SectionThree";
+import SectionTwo from "./Sections/SectionTwo";
 
 const ServicesPage = () => {
   return (
-    <div>
+    <>
       <Section />
       <SectionTwo />
       <SectionThree />
-    </div>
+    </>
   );
 };
 
