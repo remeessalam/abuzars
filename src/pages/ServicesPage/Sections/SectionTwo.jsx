@@ -5,7 +5,7 @@ import hand from "../../../assets/svg/servicepagehand.svg";
 const SectionTwo = () => {
   return (
     <div
-      className="flex flex-col lg:flex-row items-center gap-5  bg-current bg-cover py-16 px-7"
+      className="flex mt-16 flex-col lg:flex-row items-center gap-5  bg-current bg-cover py-16 px-7"
       style={{ backgroundImage: `url(${servicepagegif})` }}
     >
       <div className="sm:w-[90%] w-full px-2 sm:px-0 lg:w-1/2">
