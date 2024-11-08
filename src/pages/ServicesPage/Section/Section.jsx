@@ -8,6 +8,12 @@ import sbc from "../../../assets/png/sbc.png";
 import it from "../../../assets/png/it.png";
 import consulting from "../../../assets/png/consulting.png";
 import bottomimage from "../../../assets/images/homepagebottomimage.jpeg";
+import Component from "../../../assets/svg/Component4.svg";
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
+
+const animation = { duration: 20000, easing: (t) => t };
+
 const servicesDetails = [
   {
     icon: servicesgameicon,
@@ -65,6 +71,25 @@ const servicesDetails = [
   },
 ];
 const Section = () => {
+  const [sliderRef] = useKeenSlider({
+    loop: true,
+
+    renderMode: "performance",
+    drag: false,
+    created(s) {
+      s.moveToIdx(5, true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    slides: {
+      perView: 7,
+      spacing: 10,
+    },
+  });
   return (
     <>
       <div
@@ -120,6 +145,21 @@ const Section = () => {
           <h4 className="text-white w-80">
             Trusted by the best brands around the world
           </h4>
+        </div>
+
+        <div ref={sliderRef} className="relative flex  mt-[24px] keen-slider">
+          <div className="absolute top-0 left-0 w-28 h-full bg-gradient-to-r from-[#080719] to-transparent pointer-events-none z-10"></div>
+
+          {[...Array(10)].map((_, idx) => (
+            <div
+              key={idx}
+              className="keen-slider__slide"
+              // style={{ maxWidth: "100px !important" }}
+            >
+              <img src={Component} alt={`Slide ${idx + 1} h-[28px]`} />
+            </div>
+          ))}
+          <div className="absolute top-0 right-0 w-28 h-full bg-gradient-to-l from-[#080719] to-transparent pointer-events-none z-10"></div>
         </div>
       </div>
     </>
