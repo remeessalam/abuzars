@@ -94,7 +94,6 @@ const Section = () => {
     <>
       <div
         className="relative flex mt-44 z-0 h-[90vh] items-center bg-cover bg-center flex-col  w-screen mx-auto  min-h-full bg-[#080719] text-white overflow-hidden"
-        // bg-top bg-[length:100%_570px]
         style={{ backgroundImage: `url(${homeicon})` }}
       >
         <div className="flex flex-col z-10 overflow-hidden ">
@@ -151,11 +150,7 @@ const Section = () => {
           <div className="absolute top-0 left-0 w-28 h-full bg-gradient-to-r from-[#080719] to-transparent pointer-events-none z-10"></div>
 
           {[...Array(10)].map((_, idx) => (
-            <div
-              key={idx}
-              className="keen-slider__slide"
-              // style={{ maxWidth: "100px !important" }}
-            >
+            <div key={idx} className="keen-slider__slide">
               <img src={Component} alt={`Slide ${idx + 1} h-[28px]`} />
             </div>
           ))}
