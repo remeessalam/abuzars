@@ -30,7 +30,7 @@ const SectionThree = () => {
                 <img src={linkedinvector} alt="" />
               </span>
             </h3>
-            <p>
+            <p className="text-center text-2xl font-bold">
               Ceo/Chairman/Founder of <br />
               BlueBillionaire.ai
             </p>

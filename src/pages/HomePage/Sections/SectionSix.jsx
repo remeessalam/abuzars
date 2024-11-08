@@ -10,6 +10,7 @@ const SectionSix = () => {
         <ReactPlayer
           url={video}
           loop={true}
+          playsinline
           playing={true}
           width="100%"
           height="100%"
