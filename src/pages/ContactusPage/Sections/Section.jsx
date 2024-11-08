@@ -88,7 +88,7 @@ const Section = () => {
               <div className="border border-[#505362] rounded-lg mt-2">
                 <input
                   type="number"
-                  placeholder="John Carter"
+                  placeholder="(123) 456 - 7890"
                   className="py-4 w-full pl-4 bg-transparent border-none focus:outline-none focus:ring-0"
                 />
               </div>
@@ -98,7 +98,7 @@ const Section = () => {
               <div className="border border-[#505362] rounded-lg mt-2">
                 <input
                   type="text"
-                  placeholder="example@youremail.com"
+                  placeholder="ex. Google"
                   className="py-4 w-full pl-4 bg-transparent border-none focus:outline-none focus:ring-0"
                 />
               </div>
@@ -108,9 +108,9 @@ const Section = () => {
             <div className="w-full">
               <h3>Message</h3>
               <div className="border border-[#505362] min-h-40 rounded-lg mt-2">
-                <input
-                  type="text"
-                  className="py-4  pl-4 bg-transparent border-none focus:outline-none focus:ring-0"
+                <textarea
+                  className="py-4 w-full pl-4 bg-transparent border-none focus:outline-none focus:ring-0 resize-none"
+                  rows="4"
                 />
               </div>
             </div>

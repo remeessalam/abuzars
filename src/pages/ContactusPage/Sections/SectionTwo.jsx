@@ -1,15 +1,6 @@
 import { useState } from "react";
 import plus from "../../../assets/svg/plus.svg";
-// const questions = [
-//   "What services do you offer to help build an AI company?",
-//   "Do I need technical knowledge to start an AI company?",
-//   "How long does it take to launch an AI product?",
-//   "How do I know if my AI idea is feasible?",
-//   "What types of AI solutions can you help develop?",
-//   "What kind of data is required to build an AI solution?",
-//   "How do I get started?",
-//   "Still have questions?",
-// ];
+
 let questions = [
   {
     question: " What services do you offer to help build an AI company?",
