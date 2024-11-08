@@ -29,7 +29,9 @@ const Header = () => {
               <li>
                 <Link to="/services">Sevices</Link>
               </li>
-              <li>Contact</li>
+              <li>
+                <Link to="/contactus"> Contact</Link>
+              </li>
             </ul>
           </div>
           <div className="text gap-4  justify-end md:flex hidden ">
@@ -70,7 +72,9 @@ const Header = () => {
           <li>
             <Link to="/services">Sevices</Link>
           </li>
-          <li>Contact</li>
+          <li>
+            <Link to="/contactus"> Contact</Link>
+          </li>
         </ul>
         <div className="pl-6 pb-6 flex flex-col gap-6">
           <Button buttonName={"Sign in"} style={""} border={false} />
