@@ -100,7 +100,7 @@ const Section = () => {
   return (
     <>
       <div
-        className="relative flex mt-44 z-0 h-[90vh] items-center bg-contain bg-center flex-col  w-screen mx-auto  min-h-full bg-[#080719] text-white overflow-hidden"
+        className="relative flex mt-44 z-0 h-[90vh] items-center bg-contain bg-center bg-no-repeat flex-col  w-screen mx-auto  min-h-full bg-[#080719] text-white overflow-hidden"
         style={{ backgroundImage: `url(${homeicon})` }}
       >
         <div className="flex flex-col z-10 overflow-hidden ">
