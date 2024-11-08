@@ -106,9 +106,9 @@ const Modal = ({ closeModal, index }) => {
 
   return (
     <div className="w-screen h-screen flex justify-center items-center bg-[#000000a3] fixed top-0 left-0">
-      <div className="relative flex w-3/4 flex-col overflow-y-auto h-[80vh] bg-black no-scrollbar justify-between items-center text-white py-8 px-5 mt-28">
+      <div className="relative flex w-full sm:w-3/4 flex-col overflow-y-auto h-[80vh] bg-black no-scrollbar justify-between items-center text-white py-8 px-1 sm:px-5 mt-28">
         <div
-          className="fixed top-[19%] font-extrabold opacity-40 right-[13%] flex justify-center items-center text-black bg-white w-8 h-8 rounded-full"
+          className="fixed top-[19%] font-extrabold opacity-40 right-0 sm:right-[13%] flex justify-center items-center text-black bg-white w-8 h-8 rounded-full"
           onClick={closeModal}
         >
           x
