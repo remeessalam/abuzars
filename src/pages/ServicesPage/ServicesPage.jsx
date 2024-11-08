@@ -1,4 +1,4 @@
-import Section from "./Section/section";
+import Section from "./Section/Section";
 import SectionThree from "./Section/SectionThree";
 import SectionTwo from "./Section/SectionTwo";
 
