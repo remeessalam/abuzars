@@ -26,7 +26,9 @@ const Header = () => {
               <li>
                 <Link to="/about">About</Link>
               </li>
-              <li>Services</li>
+              <li>
+                <Link to="/services">Sevices</Link>
+              </li>
               <li>Contact</li>
             </ul>
           </div>
@@ -65,7 +67,9 @@ const Header = () => {
           <li>
             <Link to="/about">About</Link>
           </li>
-          <li>Sevices</li>
+          <li>
+            <Link to="/services">Sevices</Link>
+          </li>
           <li>Contact</li>
         </ul>
         <div className="pl-6 pb-6 flex flex-col gap-6">
