@@ -11,6 +11,8 @@ import bottomimage from "../../../assets/images/homepagebottomimage.jpeg";
 import Component from "../../../assets/svg/Component4.svg";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import Modal from "../../../component/Modal/Modal";
+import { useState } from "react";
 
 const animation = { duration: 20000, easing: (t) => t };
 
@@ -71,6 +73,7 @@ const servicesDetails = [
   },
 ];
 const Section = () => {
+  const [openModal, setOpenModal] = useState("");
   const [sliderRef] = useKeenSlider({
     loop: true,
 
@@ -90,6 +93,10 @@ const Section = () => {
       spacing: 10,
     },
   });
+  console.log(openModal, "asjkdfhakjsdfj");
+  const closeModal = () => {
+    setOpenModal("");
+  };
   return (
     <>
       <div
@@ -117,11 +124,12 @@ const Section = () => {
           </div>
         </div>
       </div>
-      <div className="flex text-white gap-5 relative -top-[45vh] flex-wrap justify-center mt-20 ">
+      <div className="flex text-white gap-5 xl:px-28 relative -top-[45vh] flex-wrap justify-center mt-20 ">
         {servicesDetails.map((ser, indx) => (
           <div
             key={indx}
-            className="flex flex-col bg-[#091828d1] items-center max-w-[317px] p-6 rounded-xl"
+            className="flex flex-col justify-between bg-[#091828d1] items-center max-w-[317px] p-6 rounded-xl"
+            onClick={() => setOpenModal(indx + 1)}
           >
             <img
               src={ser.icon}
@@ -134,7 +142,10 @@ const Section = () => {
             <p className="font-normal text-center text-base text-[#B5B3B3]">
               {ser.paragraph}
             </p>
-            <button className="bg-button-gradient text-lg font-medium px-6 py-1 rounded-3xl mt-6">
+            <button
+              onClick={() => setOpenModal(indx + 1)}
+              className="bg-button-gradient text-lg font-medium px-6 py-1 rounded-3xl mt-6 "
+            >
               Learn More
             </button>
           </div>
@@ -157,6 +168,7 @@ const Section = () => {
           <div className="absolute top-0 right-0 w-28 h-full bg-gradient-to-l from-[#080719] to-transparent pointer-events-none z-10"></div>
         </div>
       </div>
+      {openModal && <Modal closeModal={closeModal} index={openModal} />}
     </>
   );
 };
