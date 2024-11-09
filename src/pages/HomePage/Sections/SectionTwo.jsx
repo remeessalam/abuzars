@@ -6,12 +6,56 @@ import chinese from "../../../assets/svg/chinese.svg";
 import setting from "../../../assets/svg/setting.svg";
 import Button from "../../../component/Button/Button";
 import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 const SectionTwo = () => {
+  const [isInView, setIsInView] = useState(false);
+  const [isImageTwoInView, setIsImageTwoInView] = useState(false);
+  const [isImageThreeInView, setIsImageThreeInView] = useState(false);
+  const imageRef = useRef(null);
+  const imageTwoRef = useRef(null);
+  const imageThreeRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.unobserve(entry.target); // Stop observing once in view
+        }
+        if (entry.target === imageTwoRef.current && entry.isIntersecting) {
+          setIsImageTwoInView(true);
+          observer.unobserve(entry.target);
+        }
+        if (entry.target === imageThreeRef.current && entry.isIntersecting) {
+          setIsImageThreeInView(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.1 } // Trigger when 10% of the image is in view
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+    if (imageTwoRef.current) observer.observe(imageTwoRef.current);
+    if (imageThreeRef.current) observer.observe(imageThreeRef.current);
+
+    return () => {
+      if (imageRef.current) observer.unobserve(imageRef.current);
+      if (imageTwoRef.current) observer.unobserve(imageTwoRef.current);
+      if (imageThreeRef.current) observer.unobserve(imageThreeRef.current);
+    };
+  }, []);
   return (
     <div className="md:w-[95%] lg:w-[80%] w-full mx-auto md:mt-[120px] mt-[60px]  h-full relative z-10">
       <div className="flex-col md:flex-row justify-center items-center md:justify-normal md:items-start flex h-full">
-        <div className="md:w-1/2 w-3/4 min-h-full my-auto transition-all duration-500">
+        <div
+          className={`md:w-1/2 w-3/4 min-h-full my-auto transition-all duration-1000 ${
+            isInView ? "translate-x-0 opacity-100" : "-translate-x-28 opacity-0"
+          }`}
+        >
           <img
+            ref={imageRef}
             src={sectionTwoImageOne}
             alt=""
             width={642}
@@ -76,8 +120,15 @@ const SectionTwo = () => {
       </div>
 
       <div className="flex lg:flex-row flex-col justify-between items-center mt-10">
-        <div className="md:w-1/2 w-3/4">
+        <div
+          className={`md:w-1/2 w-3/4 transition-all duration-1000 ${
+            isImageTwoInView
+              ? "translate-y-0 opacity-100"
+              : "translate-y-28 opacity-0"
+          }`}
+        >
           <img
+            ref={imageTwoRef}
             src={sectionTwoImageTwo}
             alt=""
             className="w-[552px] sm:h-[360px] object-contain"
@@ -169,8 +220,17 @@ const SectionTwo = () => {
             }}
           />
         </div>
-        <div className="w-3/4 flex justify-center lg:w-1/2 mt-5 lg:mt-0">
+        <div
+          className={`w-3/4 flex justify-center lg:w-1/2 mt-5 lg:mt-0 transition-all duration-1000
+        ${
+          isImageThreeInView
+            ? "translate-x-0 opacity-100"
+            : "translate-x-28 opacity-0"
+        }
+        `}
+        >
           <img
+            ref={imageThreeRef}
             src={sectionTwoImageAR}
             alt="sectionTwoImageAR"
             className="rounded-2xl w-[552px]  object-contain"

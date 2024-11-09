@@ -20,6 +20,15 @@ export default {
         "10xl": " inset 0px -25px 80px -79px rgba(255,255,255,0.6)",
         "11xl": " inset 0px -58px 70px -103px rgba(61,150,255,1)",
       },
+      keyframes: {
+        scaleInOut: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
+      },
+      animation: {
+        scaleInOut: "scaleInOut 1s ease-in-out ",
+      },
     },
   },
   plugins: [],

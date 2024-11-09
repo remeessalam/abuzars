@@ -71,13 +71,11 @@ const Section = () => {
         </div>
       </div>
       <div className="flex flex-col items-center mt-[80px]  z-10">
-        <div className="h-[365px] overflow-hidden w-[95%] md:w-[77.1%]">
+        <div className="group h-[365px] overflow-hidden w-[95%] md:w-[77.1%]">
           <img
-            className="rounded-t-[50px] md:rounded-t-[82px] h-[420px] w-full object-cover"
+            className="rounded-t-[50px] md:rounded-t-[82px] h-[420px] w-full object-cover transition-transform duration-500 group-hover:scale-105 animate-scaleInOut"
             src={homePageImage1}
             alt="homePageImage1"
-            // width={780}
-            // height={520}
           />
         </div>
         <div className="bg-[#080719] h-[100px] w-[95%] md:w-[77.1%]" />
