@@ -4,7 +4,13 @@ import Logo from "../assets/svg/Logo.svg";
 import menuIcon from "../assets/svg/menuIcon.svg";
 import Button from "../Components/Button/Buttton";
 // import { Link } from "react-router-dom";
-const Header = () => {
+const Header = ({
+  homeRef,
+  aboutRef,
+  servicesRef,
+  contactRef,
+  scrollToSection,
+}) => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <div className="fixed top-0 w-full z-20">
@@ -21,32 +27,66 @@ const Header = () => {
           </div>
           <div className="md:flex hidden ">
             <ul className="flex gap-10">
-              <li>
+              <li
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default anchor behavior
+                  scrollToSection(homeRef); // Call the scroll function
+                }}
+              >
                 {/* <Link to="/"> */}
                 Home
                 {/* </Link> */}
               </li>
-              <li>
+              <li
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default anchor behavior
+                  scrollToSection(aboutRef); // Call the scroll function
+                }}
+              >
                 {/* <Link to="/about"> */}
                 About
                 {/* </Link> */}
               </li>
-              <li>
+              <li
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default anchor behavior
+                  scrollToSection(servicesRef); // Call the scroll function
+                }}
+              >
                 {/* <Link to="/services"> */}
                 Sevices
                 {/* </Link> */}
               </li>
-              <li>
+              <li
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default anchor behavior
+                  scrollToSection(contactRef); // Call the scroll function
+                }}
+              >
                 {/* <Link to="/contactus">  */}
                 Contact
                 {/* </Link> */}
               </li>
             </ul>
           </div>
-          <div className="text gap-4  justify-end md:flex hidden ">
+          <div
+            className="text gap-4  justify-end md:flex hidden"
+            onClick={(e) => {
+              e.preventDefault(); // Prevent default anchor behavior
+              scrollToSection(contactRef); // Call the scroll function
+            }}
+          >
             {/* <Button buttonName={"Sign in"} style={""} border={false} /> */}
             {/* <Link to="/contactus"> */}
-            <Button buttonName={"Get Started"} style={""} border={true} />
+            <Button
+              onClick={(e) => {
+                e.preventDefault(); // Prevent default anchor behavior
+                scrollToSection(homeRef); // Call the scroll function
+              }}
+              buttonName={"Get Started"}
+              style={""}
+              border={true}
+            />
             {/* </Link> */}
             {/* <button>Get Started</button> */}
           </div>
@@ -73,22 +113,50 @@ const Header = () => {
         } transition-all duration-700 bg-[#080719] w-full text-white border-y border-[#505362]`}
       >
         <ul className="flex flex-col w-full h-full p-6 justify-between">
-          <li className="w-full " onClick={() => setOpenMenu(false)}>
+          <li
+            className="w-full "
+            onClick={(e) => {
+              setOpenMenu(false);
+              e.preventDefault(); // Prevent default anchor behavior
+              scrollToSection(homeRef);
+            }}
+          >
             {/* <Link to="/"> */}
             Home
             {/* </Link> */}
           </li>
-          <li className="w-full " onClick={() => setOpenMenu(false)}>
+          <li
+            className="w-full "
+            onClick={(e) => {
+              setOpenMenu(false);
+              e.preventDefault(); // Prevent default anchor behavior
+              scrollToSection(aboutRef);
+            }}
+          >
             {/* <Link to="/about"> */}
             About
             {/* </Link> */}
           </li>
-          <li className="w-full " onClick={() => setOpenMenu(false)}>
+          <li
+            className="w-full "
+            onClick={(e) => {
+              setOpenMenu(false);
+              e.preventDefault(); // Prevent default anchor behavior
+              scrollToSection(servicesRef);
+            }}
+          >
             {/* <Link to="/services"> */}
             Sevices
             {/* </Link> */}
           </li>
-          <li className="w-full " onClick={() => setOpenMenu(false)}>
+          <li
+            className="w-full "
+            onClick={(e) => {
+              setOpenMenu(false);
+              e.preventDefault(); // Prevent default anchor behavior
+              scrollToSection(contactRef);
+            }}
+          >
             {/* <Link to="/contactus">  */}
             Contact
             {/* </Link> */}
@@ -96,7 +164,13 @@ const Header = () => {
         </ul>
         <div className="pl-6 pb-6 flex flex-col gap-6">
           {/* <Button buttonName={"Sign in"} style={""} border={false} /> */}
-          <div onClick={() => setOpenMenu(false)}>
+          <div
+            onClick={(e) => {
+              setOpenMenu(false);
+              e.preventDefault(); // Prevent default anchor behavior
+              scrollToSection(contactRef);
+            }}
+          >
             {/* <Link to="/contactus"> */}
             <Button buttonName={"Get Started"} style={""} border={true} />
             {/* </Link> */}

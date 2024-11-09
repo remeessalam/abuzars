@@ -1,5 +1,3 @@
-import sectionTwoImageOne from "../assets/images/sectionTwoImageOne.png";
-import mobilesetiontwoimage from "../assets/images/mobilesetiontwoimage.jpeg";
 import sectionTwoImageTwo from "../assets/images/sectionTwoImageTwo.jpeg";
 import mobilesetionimagetwo from "../assets/images/mobilesetionimagetwo.jpeg";
 // import sectionTwoImageAR from "../assets/images/sectionTwoImageAR.jpg";
@@ -12,24 +10,14 @@ import ios from "../assets/svg/ios.svg";
 import android from "../assets/svg/android.svg";
 import hybrid from "../assets/svg/hybrid.svg";
 import flags from "../assets/svg/flags.svg";
-// import setting from "../assets/svg/setting.svg";
-// import { Link } from "react-router-dom";
-import Button from "../Components/Button/Buttton";
-import PropTypes from "prop-types";
 import { useEffect, useRef, useState } from "react";
-
-const SectionTwo = ({ page }) => {
-  const [isInView, setIsInView] = useState(false);
-  const imageRef = useRef(null);
+const SectionOne = ({ page, servicesRef }) => {
+  const [isImageTwoInView, setIsImageTwoInView] = useState(false);
   const imageTwoRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true);
-          observer.unobserve(entry.target); // Stop observing once in view
-        }
         if (entry.target === imageTwoRef.current && entry.isIntersecting) {
           setIsImageTwoInView(true);
           observer.unobserve(entry.target);
@@ -38,65 +26,15 @@ const SectionTwo = ({ page }) => {
       { threshold: 0.1 } // Trigger when 10% of the image is in view
     );
 
-    if (imageRef.current) {
-      observer.observe(imageRef.current);
-    }
     if (imageTwoRef.current) observer.observe(imageTwoRef.current);
 
     return () => {
-      if (imageRef.current) observer.unobserve(imageRef.current);
       if (imageTwoRef.current) observer.unobserve(imageTwoRef.current);
     };
   }, []);
   return (
     <div className="md:w-[95%] lg:w-[80%] w-full mx-auto md:mt-[120px] mt-[60px]  h-full relative z-10">
-      <div className="flex-col md:flex-row justify-center items-center md:justify-normal md:items-start flex h-full">
-        <div
-          className={`md:w-1/2 w-3/4 min-h-full my-auto  rounded-xl overflow-hidden transition-all duration-1000 ${
-            isInView ? "translate-x-0 opacity-100" : "-translate-x-28 opacity-0"
-          }`}
-        >
-          <img
-            ref={imageRef}
-            src={page === "web" ? sectionTwoImageOne : mobilesetiontwoimage}
-            alt=""
-            width={642}
-            height={580}
-            className=" max-h-[580px] my-auto"
-          />
-        </div>
-        <div className="flex flex-col gap-4 md:w-1/2 w-3/4  md:py-24 py-12 md:pl-24">
-          <h3 className="text-[#F5F5F5] w-fit text-[10px] rounded-full border px-[19px] py-[11px] shadow-8xl shadow-white">
-            {page === "web"
-              ? "Web Development".toUpperCase()
-              : "App Development".toUpperCase()}
-          </h3>
-          <p className="text-xl font-medium text-white">
-            {page === "web"
-              ? "At BlueBillionaire.ai, we are passionately committed to deliveringvpremium website design and exceptional services that exemplify our dedication to quality and excellence."
-              : "At BlueBillionaire.ai, we are dedicated to crafting high-quality apps that combine stunning design with robust functionality. Our passion for excellence and innovation drives us to build seamless, responsive mobile experiences that raise industry standards."}
-          </p>
-          <p className="text-sm font-normal text-[#BABCC6] mb-8">
-            {page === "web"
-              ? "We recognize that each business is distinct, and our approach to web development is built around a deep understanding of your specific requirements. Our customized web solutions are designed to exceed your expectations, delivering measurable results that boost your online presence and positively impact your bottom line."
-              : "We understand that every business has unique needs and challenges, and our approach to app development is crafted to reflect that. By delivering custom app solutions tailored to your specific goals, we enhance user engagement and drive measurable results, creating a substantial impact on your business's success."}
-          </p>
-          {/* <button className="mt-8 text-white items-start w-fit">
-            Get Started
-          </button> */}
-          <div>
-            {/* <Link to="/contactus"> */}
-            <Button
-              buttonName="Get Started"
-              border={true}
-              divStyle={"max-w-[200px]"}
-            />
-            {/* </Link> */}
-          </div>
-        </div>
-      </div>
-
-      {/* <div
+      <div
         ref={servicesRef}
         className="flex flex-col items-center lg:items-start lg:flex-row lg:mt-[120px] mt-[60px]"
       >
@@ -222,13 +160,9 @@ const SectionTwo = ({ page }) => {
             }}
           />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
 
-SectionTwo.propTypes = {
-  page: PropTypes.string.isRequired,
-};
-
-export default SectionTwo;
+export default SectionOne;

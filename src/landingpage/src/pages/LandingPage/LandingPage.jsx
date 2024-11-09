@@ -4,12 +4,12 @@ import SectionThree from "../../Sections/SectionThree";
 import { SectionFour } from "../../Sections/SectionFour";
 import PropTypes from "prop-types";
 
-const LandingPage = ({ page }) => {
+const LandingPage = ({ page, aboutRef }) => {
   return (
     <div className="bg-[#080719] text-white">
       {/* Landing Page - {page === "web" ? "Web" : "Mobile"} */}
       <Section page={page} />
-      <SectionTwo page={page} />
+      <SectionTwo page={page} aboutRef={aboutRef} />
       <SectionThree page={page} />
       <SectionFour />
     </div>
