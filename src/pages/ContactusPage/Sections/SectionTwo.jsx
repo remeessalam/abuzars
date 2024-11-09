@@ -57,7 +57,7 @@ const SectionTwo = () => {
               <div className={` w-full  py-4 rounded-md pl-6 bg-[#050E15]`}>
                 <h3 className="font-semibold text-base">{q.question} </h3>
                 {index === open && (
-                  <p className="mt-4 text-text-[#BABCC6]">{q.answer}</p>
+                  <p className="mt-4 text-base text-[#BABCC6]">{q.answer}</p>
                 )}
               </div>
               <img

@@ -20,7 +20,7 @@ const SectionTwo = () => {
           </h2>
         </div>
         <div className="flex justify-center mt-[10px] mb-5">
-          <p className="max-w-[718px] text-start text-sm text-[#BABCC6]">
+          <p className="max-w-[718px] text-start text-base text-[#BABCC6]">
             Our diverse expertise spans multiple industries, empowering
             businesses of all sizes to harness the transformative power of AI
             and unlock invaluable data-driven insights.

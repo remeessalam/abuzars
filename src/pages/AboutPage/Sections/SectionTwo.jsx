@@ -30,7 +30,7 @@ const SectionTwo = () => {
           <h2 className="text-[38px] font-medium text-start leading-[65px]">
             Your Vision, Amplified by AI Innovation
           </h2>
-          <p className="max-w-[718px] text-start text-sm text-[#BABCC6]">
+          <p className="max-w-[718px] text-start text-base text-[#BABCC6]">
             We elevate your vision by harnessing the power of AI to deliver
             innovative, data-driven solutions that drive transformative success
           </p>
@@ -50,7 +50,7 @@ const SectionTwo = () => {
                 <img src={bulb} alt="setting" />
                 <h4 className="text-2xl font-medium mt-4">Innovation</h4>
               </div>
-              <p className="text-xs font-normal mt-2 text-[#BABCC6] max-w-[318px]">
+              <p className="text-base font-normal mt-2 text-[#BABCC6] max-w-[318px]">
                 At BlueBillionaire.ai, we constantly push the boundaries of AI
                 and technology to create groundbreaking solutions. Innovation is
                 at the heart of everything we do, enabling us to stay ahead in a
@@ -76,7 +76,7 @@ const SectionTwo = () => {
                 <img src={flag} alt="setting" />
                 <h4 className="text-2xl font-medium mt-4">Ownership</h4>
               </div>
-              <p className="text-xs font-normal mt-2 text-[#BABCC6] max-w-[318px]">
+              <p className="text-base font-normal mt-2 text-[#BABCC6] max-w-[318px]">
                 We take full responsibility for the success of every project,
                 owning each step from concept to execution. Our team is
                 dedicated to delivering outcomes that make a tangible impact on
@@ -104,7 +104,7 @@ const SectionTwo = () => {
                 <img src={badge} alt="setting" />
                 <h4 className="text-2xl font-medium mt-4">Commitment</h4>
               </div>
-              <p className="text-xs font-normal mt-2 text-[#BABCC6] max-w-[318px]">
+              <p className="text-base font-normal mt-2 text-[#BABCC6] max-w-[318px]">
                 Our unwavering commitment to excellence drives us to exceed
                 expectations on every project. We are passionate about
                 delivering results that align with our clients’ vision and
@@ -130,7 +130,7 @@ const SectionTwo = () => {
                 <img src={globe} alt="setting" />
                 <h4 className="text-2xl font-medium mt-4">Openness</h4>
               </div>
-              <p className="text-xs font-normal mt-2 text-[#BABCC6] max-w-[318px]">
+              <p className="text-base font-normal mt-2 text-[#BABCC6] max-w-[318px]">
                 We believe in transparency and open communication with our
                 clients and within our team. This openness ensures that we are
                 always aligned with our clients’ goals and fosters an
@@ -158,7 +158,7 @@ const SectionTwo = () => {
                 <img src={groupimage} alt="setting" />
                 <h4 className="text-2xl font-medium mt-4">Teamwork</h4>
               </div>
-              <p className="text-xs font-normal mt-2 text-[#BABCC6] max-w-[318px]">
+              <p className="text-base font-normal mt-2 text-[#BABCC6] max-w-[318px]">
                 Collaboration is key to our success. By fostering a culture of
                 teamwork, we combine diverse perspectives and expertise to
                 develop solutions that are greater than the sum of their parts.
@@ -183,7 +183,7 @@ const SectionTwo = () => {
                 <img src={growth} alt="setting" />
                 <h4 className="text-2xl font-medium mt-4">Growth</h4>
               </div>
-              <p className="text-xs font-normal mt-2 text-[#BABCC6] max-w-[318px]">
+              <p className="text-base font-normal mt-2 text-[#BABCC6] max-w-[318px]">
                 We are committed to continuous learning and development, both
                 for our team and our clients. Growth is not just a goal;
                 it&rsquo;s a mindset that drives us to evolve, innovate, and

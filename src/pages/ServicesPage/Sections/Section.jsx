@@ -121,7 +121,7 @@ const Section = () => {
               </h3>
             </div>
             <div className="flex justify-center mt-[10px]">
-              <p className="max-w-[718px] sm:px-0 px-3 text-center text-sm text-[#BABCC6]">
+              <p className="max-w-[718px] sm:px-0 px-3 text-center text-base text-[#BABCC6]">
                 At AUTH AI SOLUTIONS, we are not just committed to driving
                 growth; we also cultivate a culture of continuous learning and
                 innovation within our team. Our passionate engineers and data

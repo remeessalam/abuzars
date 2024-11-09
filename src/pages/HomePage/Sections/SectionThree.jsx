@@ -30,7 +30,7 @@ const SectionThree = () => {
         </h2>
       </div>
       <div className="mt-3 z-10">
-        <p className="text-center text-sm text-[#BABCC6] max-w-[523px]">
+        <p className="text-center text-base text-[#BABCC6] max-w-[523px]">
           At BlueBillionaire.ai, we believe that our success is deeply
           intertwined with the effectiveness of our processes. Our streamlined
           approach ensures that your projects are executed with precision,
@@ -65,7 +65,7 @@ const SectionThree = () => {
               Understanding Your Needs
             </h4>
           </div>
-          <p className="text-sm font-normal sm:text-start text-center mt-2 text-[#BABCC6] max-w-[318px] pl-[18px]">
+          <p className="text-base font-normal sm:text-start text-center mt-2 text-[#BABCC6] max-w-[318px] pl-[18px]">
             They emphasize building strong partnerships and ensure open
             communication throughout the project lifecycle.
           </p>
@@ -92,7 +92,7 @@ const SectionThree = () => {
               Data Acquisition and Analysis
             </h4>
           </div>
-          <p className="text-sm font-normal mt-2 sm:text-start text-center text-[#BABCC6] max-w-[318px] pl-[18px]">
+          <p className="text-base font-normal mt-2 sm:text-start text-center text-[#BABCC6] max-w-[318px] pl-[18px]">
             Their AI expertise focuses on analyzing unstructured data to
             generate actionable insights
           </p>
@@ -119,7 +119,7 @@ const SectionThree = () => {
               Customized Solution Development
             </h4>
           </div>
-          <p className="text-sm font-normal mt-2   sm:text-start text-center text-[#BABCC6] max-w-[318px] pl-[18px]">
+          <p className="text-base font-normal mt-2   sm:text-start text-center text-[#BABCC6] max-w-[318px] pl-[18px]">
             Based on Client needs, we recommend a solution from their service
             offerings from our Wide Range of Services
           </p>

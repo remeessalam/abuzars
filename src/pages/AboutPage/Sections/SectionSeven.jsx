@@ -15,14 +15,11 @@ const SectionSeven = () => {
           <div className="flex flex-col w-[90%] md:w-1/2 bg-[#08081b]">
             <div className="bg-aboutas-gradient h-[.5px]" />
             <div className=" py-5 px-3">
-              <h4 className="font-medium">
-                What services do you offer to help build an AI company?
-              </h4>
-              <p className=" text-[#BABCC6]">
-                We provide end-to-end services, including AI strategy
-                consultation, product development, business model creation, and
-                market entry support. We guide you from ideation to product
-                launch.
+              <h4 className="font-medium">How do I get started?</h4>
+              <p className=" text-base text-[#BABCC6]">
+                Simply schedule a free consultation with us to discuss your
+                idea. We will outline how we can help turn your vision into a
+                successful AI company.
               </p>
             </div>
             <div className="bg-aboutas-gradient h-[.5px]" />
@@ -33,7 +30,7 @@ const SectionSeven = () => {
               <h4 className="font-medium">
                 Do I need technical knowledge to start an AI company?
               </h4>
-              <p className=" text-[#BABCC6]">
+              <p className="text-base text-[#BABCC6]">
                 No, you don’t need technical expertise. Our team of AI experts
                 will handle the technical aspects while you focus on the
                 business vision and strategy.
@@ -49,7 +46,7 @@ const SectionSeven = () => {
               <h4 className="font-medium">
                 How long does it take to launch an AI product?
               </h4>
-              <p className=" text-[#BABCC6]">
+              <p className="text-base text-[#BABCC6]">
                 The timeline varies, but typically it takes 3 to 6 months to
                 develop a Minimum Viable Product (MVP) and begin the launch
                 process.
@@ -63,7 +60,7 @@ const SectionSeven = () => {
               <h4 className="font-medium">
                 How do I know if my AI idea is feasible?
               </h4>
-              <p className=" text-[#BABCC6]">
+              <p className="text-base text-[#BABCC6]">
                 We offer an initial consultation to evaluate your idea&rsquo;s
                 feasibility, its market potential, and provide feedback on how
                 to refine it for success.

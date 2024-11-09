@@ -28,7 +28,7 @@ const SectionTwo = () => {
             premium website design and exceptional services that exemplify our
             dedication to quality and excellence.
           </p>
-          <p className="text-sm font-normal text-[#BABCC6] mb-8">
+          <p className="text-base font-normal text-[#BABCC6] mb-8">
             We recognize that every business is unique, and our approach is
             rooted in a deep understanding of your specific needs and
             challenges. By doing so, we provide customized solutions that not
@@ -62,7 +62,7 @@ const SectionTwo = () => {
         </div>
 
         <div className="lg:w-1/2 w-3/4 flex justify-end mt-4 lg:mt-0">
-          <p className="text-sm font-normal text-center lg:text-start text-[#BABCC6]">
+          <p className="text-base font-normal text-center lg:text-start text-[#BABCC6]">
             At BlueBillionaire.ai, we are dedicated to transforming ideas into
             exceptional digital experiences. Our diverse range of services spans
             game development, blockchain solutions, augmented and virtual
@@ -90,7 +90,7 @@ const SectionTwo = () => {
               Game Development
             </h4>
           </div>
-          <p className="text-sm font-normal md:w-[91%] w-full sm:pl-[58px] text-[#BABCC6]">
+          <p className="text-base font-normal md:w-[91%] w-full sm:pl-[58px] text-[#BABCC6]">
             Embark on a journey of unforgettable gaming experiences with
             BlueBillionaire.ai, where our expert team of game developers brings
             your visions to life. We specialize in crafting innovative games
@@ -103,7 +103,7 @@ const SectionTwo = () => {
               Blockchain Solutions
             </h4>
           </div>
-          <p className="text-sm font-normal  md:w-[91% w-full sm:pl-[58px] text-[#BABCC6]">
+          <p className="text-base font-normal  md:w-[91% w-full sm:pl-[58px] text-[#BABCC6]">
             At BlueBillionaire.ai,we provide cutting-edge blockchain development
             services that revolutionize the decentralised operation, security,
             and transparency of your company&rsquo;s operations. Our expertise
@@ -144,7 +144,7 @@ const SectionTwo = () => {
               Augmented Reality & Virtual Reality (AR/VR)
             </h4>
           </div>
-          <p className="text-sm font-normal text-[#BABCC6] w-full max-w-[500px] mt-[17px] sm:pl-[58px]">
+          <p className="text-base font-normal text-[#BABCC6] w-full max-w-[500px] mt-[17px] sm:pl-[58px]">
             with our cutting-edge AR/VR solutions. We create immersive
             environments that allow users to interact with your products and
             services in innovative and exciting ways. Whether it&rsquo;s

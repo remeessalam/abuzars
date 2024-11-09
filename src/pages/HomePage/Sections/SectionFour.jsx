@@ -15,7 +15,7 @@ const SectionFour = () => {
             <br /> power <br />
             up your business with AI
           </h3>
-          <p className="text-sm font-normal text-[#BABCC6] max-w-[550px] mx-auto mt-2 sm:mt-5">
+          <p className="text-base font-normal text-[#BABCC6] max-w-[550px] mx-auto mt-2 sm:mt-5">
             Where Data Meets Innovation: Empowering Your Business with Smart
             Insights Imagine a world where data transcends mere numbers to
             become the key that unlocks limitless possibilities. At

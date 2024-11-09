@@ -11,9 +11,9 @@ const SectionSix = () => {
         <h2 className="text-[50px] font-medium">Join our team</h2>
       </div>
       <div>
-        <p className="text-[#BABCC6] max-w-[500px] text-center">
-          Lorem ipsum dolor sit amet consectetur iaculis viverra amet pulvinar
-          vitae ultrices arcu. Gravida odio diam gravida congue.
+        <p className="text-base text-[#BABCC6] max-w-[500px] text-center">
+          Join BlueBillionaire.ai and help create innovative solutions in a team
+          that values creativity, collaboration, and growth.
         </p>
       </div>
       <div className="flex justify-between pl-4 pr-1 py-1 items-center w-[95%] mt-5 sm:w-[60%] border rounded-lg">

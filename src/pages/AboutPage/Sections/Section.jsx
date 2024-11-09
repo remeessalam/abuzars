@@ -48,7 +48,7 @@ const Section = () => {
           </h2>
         </div>
         <div className="flex justify-center mt-[10px]">
-          <p className="max-w-[718px] text-center text-sm text-[#BABCC6]">
+          <p className="max-w-[718px] text-center text-base text-[#BABCC6]">
             BlueBillionaire.ai is a leading innovator in AI and data-driven
             business solutions, empowering companies to thrive in the digital
             era. We specialize in crafting tailored, transformative strategies

@@ -141,7 +141,7 @@ const SectionFive = () => {
               </div>
             </div>
             <div className="mt-2">
-              <p className="font-normal text-[14px] text-[#BABCC6] leading-">
+              <p className="font-normal text-base text-[#BABCC6] leading-">
                 &quot;We were looking for a way to improve the security and
                 transparency of our financial transactions. BlueBillionaire.ai
                 developed a bespoke blockchain solution that has revolutionized
@@ -182,7 +182,7 @@ const SectionFive = () => {
               </div>
             </div>
             <div className="mt-2">
-              <p className="font-normal text-[14px] text-[#BABCC6] leading-2">
+              <p className="font-normal text-base text-[#BABCC6] leading-2">
                 &quot;We were looking for a way to improve the security and
                 transparency of our financial transactions. BlueBillionaire.ai
                 developed a bespoke blockchain solution that has revolutionized

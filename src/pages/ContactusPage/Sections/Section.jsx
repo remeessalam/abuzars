@@ -25,9 +25,9 @@ const Section = () => {
             Get in touch
             <br /> with us today
           </h2>
-          <p className=" max-w-[55%] mt-[15px] text-center sm:text-start text-sm text-[#BABCC6]">
-            Lorem ipsum dolor sit amet consectetur iaculis viverra amet pulvinar
-            vitae ultrices arcu gravida odio diam.
+          <p className=" max-w-[55%] mt-[15px] text-center sm:text-start text-base text-[#BABCC6]">
+            Connect with us today to discover tailored solutions that empower
+            your business and drive meaningful growth forward.
           </p>
           <div className="mt-8 flex md:flex-row flex-col gap-7">
             <div className="flex gap-3">

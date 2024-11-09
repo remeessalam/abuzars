@@ -61,7 +61,7 @@ const SectionSeven = () => {
         <h3 className="text-[54px] text-center leading-[65px] max-w-[280px] text-white">
           Unlock Your Potential
         </h3>
-        <p className="text-[#BABCC6] my-5 text-xs font-normal max-w-[440px] text-center">
+        <p className="text-[#BABCC6] my-5 text-base font-normal max-w-[440px] text-center">
           Join us today and unlock the true potential of your data, transforming
           it into actionable insights that propel your business forward. We
           understand that data is one of your most valuable assets, and our
