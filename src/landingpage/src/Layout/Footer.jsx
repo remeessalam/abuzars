@@ -8,7 +8,12 @@ import location from "../assets/svg/location.svg";
 import message from "../assets/svg/message.svg";
 import callvector from "../assets/svg/callvector.svg";
 import { Link } from "react-router-dom";
-const Footer = () => {
+const Footer = ({
+  homeRef,
+  aboutRef,
+
+  scrollToSection,
+}) => {
   return (
     <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center mt-60 md:gap-7 gap-3 bg-[#060F1A] text-white sm:px-20 px-10 py-8 sm:py-16">
       <div className="lg:w-1/4 md:w-1/2 ">
@@ -50,13 +55,25 @@ const Footer = () => {
           Company
           <ul className="mt-3">
             {/* <Link to="/"> */}
-            <li className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg">
+            <li
+              onClick={(e) => {
+                e.preventDefault(); // Prevent default anchor behavior
+                scrollToSection(homeRef); // Call the scroll function
+              }}
+              className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg"
+            >
               <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
               Homepage
             </li>
             {/* </Link> */}
             {/* <Link to="/about"> */}
-            <li className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg">
+            <li
+              onClick={(e) => {
+                e.preventDefault(); // Prevent default anchor behavior
+                scrollToSection(aboutRef); // Call the scroll function
+              }}
+              className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg"
+            >
               <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
               About Us
             </li>

@@ -50,7 +50,11 @@ const Applayoutlandingpage = ({ page }) => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        scrollToSection={scrollToSection}
+      />
     </div>
   );
 };
