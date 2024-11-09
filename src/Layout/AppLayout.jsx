@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollTop";
 
 const AppLayout = () => {
   return (
@@ -9,6 +10,7 @@ const AppLayout = () => {
         <Header />
         <div className="relative top-28 left-0">
           <div className="overflow-hidden">
+            <ScrollToTop />
             <Outlet />
           </div>
         </div>
