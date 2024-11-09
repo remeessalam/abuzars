@@ -1,11 +1,17 @@
 import sectionTwoImageOne from "../assets/images/sectionTwoImageOne.png";
+import mobilesetiontwoimage from "../assets/images/mobilesetiontwoimage.jpeg";
 import sectionTwoImageTwo from "../assets/images/sectionTwoImageTwo.jpeg";
+import mobilesetionimagetwo from "../assets/images/mobilesetionimagetwo.jpeg";
 // import sectionTwoImageAR from "../assets/images/sectionTwoImageAR.jpg";
 import roundedHeart from "../assets/svg/rounded-heart.svg";
-import chinese from "../assets/svg/chinese.svg";
+// import chinese from "../assets/svg/chinese.svg";
 import socialmedia from "../assets/svg/socialmedia.svg";
 import landingpage from "../assets/svg/landing-page.svg";
 import customweb from "../assets/svg/customweb.svg";
+import ios from "../assets/svg/ios.svg";
+import android from "../assets/svg/android.svg";
+import hybrid from "../assets/svg/hybrid.svg";
+import flags from "../assets/svg/flags.svg";
 // import setting from "../assets/svg/setting.svg";
 // import { Link } from "react-router-dom";
 import Button from "../Components/Button/Buttton";
@@ -15,9 +21,9 @@ const SectionTwo = ({ page }) => {
   return (
     <div className="md:w-[95%] lg:w-[80%] w-full mx-auto md:mt-[120px] mt-[60px]  h-full relative z-10">
       <div className="flex-col md:flex-row justify-center items-center md:justify-normal md:items-start flex h-full">
-        <div className="md:w-1/2 w-3/4 min-h-full my-auto transition-all duration-500">
+        <div className="md:w-1/2 w-3/4 min-h-full my-auto transition-all duration-500 rounded-xl overflow-hidden">
           <img
-            src={sectionTwoImageOne}
+            src={page === "web" ? sectionTwoImageOne : mobilesetiontwoimage}
             alt=""
             width={642}
             height={580}
@@ -78,18 +84,18 @@ const SectionTwo = ({ page }) => {
         </div>
       </div>
 
-      <div className="flex lg:flex-row flex-col justify-between items-center mt-10">
-        <div className="md:w-1/2 w-3/4">
+      <div className="flex lg:flex-row flex-col justify-between items-center mt-10 ">
+        <div className="md:w-1/2 w-3/4 ">
           <img
-            src={page === "web" ? sectionTwoImageTwo : sectionTwoImageTwo}
+            src={page === "web" ? sectionTwoImageTwo : mobilesetionimagetwo}
             alt=""
-            className="w-[552px] sm:h-[360px] object-contain"
+            className="w-[552px] sm:h-[360px] object-cover rounded-lg overflow-hidden"
           />
         </div>
         <div className="flex relative flex-col lg:pb-12 pb-0 justify-end lg:ml-[96px] h-[100%] mt-8 lg:mt-0 ml-0 gap-2 text-white md:w-1/2 w-3/4 lg:h-[535px]">
           <div className="flex w-full items-center">
             <img
-              src={page === "web" ? roundedHeart : roundedHeart}
+              src={page === "web" ? roundedHeart : ios}
               alt=""
               className="w-[45px] h-[45px]"
             />
@@ -104,7 +110,7 @@ const SectionTwo = ({ page }) => {
           </p>
           <div className="flex items-center mt-4">
             <img
-              src={page === "web" ? socialmedia : chinese}
+              src={page === "web" ? socialmedia : android}
               alt=""
               className="w-[45px] h-[45px]"
             />
@@ -121,7 +127,7 @@ const SectionTwo = ({ page }) => {
           </p>
           <div className="flex items-center mt-4">
             <img
-              src={page === "web" ? landingpage : chinese}
+              src={page === "web" ? landingpage : hybrid}
               alt=""
               className="w-[45px] h-[45px]"
             />
@@ -136,7 +142,7 @@ const SectionTwo = ({ page }) => {
           </p>
           <div className="flex items-center mt-4">
             <img
-              src={page === "web" ? customweb : chinese}
+              src={page === "web" ? customweb : flags}
               alt=""
               className="w-[45px] h-[45px]"
             />
