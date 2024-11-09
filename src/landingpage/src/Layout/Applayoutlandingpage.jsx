@@ -6,7 +6,7 @@ import Section from "../Sections/Section";
 import SectionTwo from "../Sections/SectionTwo";
 import SectionThree from "../../../pages/HomePage/Sections/SectionThree";
 import { SectionFour } from "../Sections/SectionFour";
-import SectionOne from "../Sections/Sectionone";
+import SectionServices from "../Sections/SectionServices";
 
 const Applayoutlandingpage = ({ page }) => {
   const homeRef = useRef(null);
@@ -40,7 +40,7 @@ const Applayoutlandingpage = ({ page }) => {
               <SectionTwo page={page} ref={servicesRef} />
             </div>
             <div ref={servicesRef}>
-              <SectionOne page={page} ref={servicesRef} />
+              <SectionServices page={page} ref={servicesRef} />
             </div>
             <SectionThree page={page} />
             <div ref={contactRef}>
