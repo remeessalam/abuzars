@@ -65,7 +65,7 @@ const Section = () => {
         </div>
       </div>
 
-      <h3 className="mt-[175px] z-10 max-w-[399px] font-medium text-lg text-white text-center">
+      <h3 className="mt-[135px] sm:mt-[175px] z-10 max-w-[399px] font-medium text-lg text-white text-center">
         Trusted by the best brands around the world
       </h3>
 
