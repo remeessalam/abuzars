@@ -10,7 +10,7 @@ import callvector from "../assets/svg/callvector.svg";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center mt-60 md:gap-7 gap-3 bg-[#060F1A] text-white sm:px-20 px-10 py-8 sm:py-16">
+    <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-between mt-60 md:gap-7 gap-3 bg-[#060F1A] text-white sm:px-20 px-10 py-8 sm:py-16">
       <div className="lg:w-1/4 md:w-1/2 ">
         <div>
           <img src={Logo} alt="" className="w-[238px] h-[122px]" />
@@ -61,14 +61,10 @@ const Footer = () => {
                 About Us
               </li>
             </Link>
-            <li className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg">
-              <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
-              Our Team
-            </li>
           </ul>
         </h2>
       </div>
-      <div className="lg:w-1/4 md:w-1/2 md:pt-[122px]">
+      {/* <div className="lg:w-1/4 md:w-1/2 md:pt-[122px]">
         <h2 className="font-semibold text-2xl">
           Support
           <ul className="mt-3">
@@ -90,7 +86,7 @@ const Footer = () => {
             </li>
           </ul>
         </h2>
-      </div>
+      </div> */}
       <div className="lg:w-1/4 md:w-1/2 md:pt-[122px]">
         <h2 className="font-semibold text-2xl">
           Contact Us
