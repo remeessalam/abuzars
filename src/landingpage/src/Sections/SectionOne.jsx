@@ -11,7 +11,7 @@ import android from "../assets/svg/android.svg";
 import hybrid from "../assets/svg/hybrid.svg";
 import flags from "../assets/svg/flags.svg";
 import { useEffect, useRef, useState } from "react";
-const SectionOne = ({ page, servicesRef }) => {
+const Sectionone = ({ page, servicesRef }) => {
   const [isImageTwoInView, setIsImageTwoInView] = useState(false);
   const imageTwoRef = useRef(null);
 
@@ -165,4 +165,4 @@ const SectionOne = ({ page, servicesRef }) => {
   );
 };
 
-export default SectionOne;
+export default Sectionone;

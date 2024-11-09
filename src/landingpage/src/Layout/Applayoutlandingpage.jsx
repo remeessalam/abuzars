@@ -6,7 +6,7 @@ import Section from "../Sections/Section";
 import SectionTwo from "../Sections/SectionTwo";
 import SectionThree from "../../../pages/HomePage/Sections/SectionThree";
 import { SectionFour } from "../Sections/SectionFour";
-import SectionOne from "../Sections/sectionone";
+import SectionOne from "../Sections/Sectionone";
 
 const Applayoutlandingpage = ({ page }) => {
   const homeRef = useRef(null);
