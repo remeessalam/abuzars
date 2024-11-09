@@ -23,7 +23,7 @@ const SectionTwo = () => {
         />
       </div> */}
       <div className="flex md:flex-row flex-col w-full min-h-[506px] px-3 sm:pl-11 gap-4">
-        <div className="flex mt-5 md:mt-0 w-full md:w-[45%] flex-col justify-center items-start ">
+        <div className="flex mt-5 md:mt-0 w-full md:w-[45%] flex-col justify-center items-start pr-6">
           <h3 className="text-[#F5F5F5] w-fit text-[10px] rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white">
             {"Who we are".toUpperCase()}
           </h3>

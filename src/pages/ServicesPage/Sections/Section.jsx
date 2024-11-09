@@ -114,7 +114,7 @@ const Section = () => {
               className="object-cover h-full w-full"
             />
           </div>
-          <div className="flex mt-44 flex-col z-10 overflow-hidden ">
+          <div className="flex sm:mt-44 flex-col z-10 overflow-hidden ">
             <div className="flex justify-center">
               <h3 className="text-[#F5F5F5] text-[10px] rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white">
                 {"our services".toUpperCase()}
