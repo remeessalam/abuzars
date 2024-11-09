@@ -54,14 +54,14 @@ const SectionSeven = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center lg:w-1/3 md:w-1/2 w-[80%] px-5">
+      <div className="flex flex-col items-center lg:w-1/3 md:w-1/2  sm:w-[80%] px-5 sm:px-5">
         <h3 className="text-[#F5F5F5] text-[10px] w-fit rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white z-10 my-5 sm:my-0">
           {"join us".toUpperCase()}
         </h3>
         <h3 className="text-[54px] text-center leading-[65px] max-w-[280px] text-white">
           Unlock Your Potential
         </h3>
-        <p className="text-[#BABCC6] my-5 text-base font-normal max-w-[440px] text-center">
+        <p className="text-[#BABCC6] my-5 text-base font-normal sm:max-w-[440px] text-center">
           Join us today and unlock the true potential of your data, transforming
           it into actionable insights that propel your business forward. We
           understand that data is one of your most valuable assets, and our
