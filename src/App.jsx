@@ -35,7 +35,7 @@ const appRouter = createBrowserRouter([
     element: <Applayoutlandingpage />,
     children: [
       {
-        path: "/",
+        path: "/webdevelopment",
         element: <LandingPage page={"web"} />,
       },
     ],
