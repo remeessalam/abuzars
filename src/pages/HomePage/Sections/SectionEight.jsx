@@ -2,6 +2,7 @@
 // import imagetwo from "../../../assets/png/sectioneightimagetwo.png";
 // import imagethree from "../../../assets/png/sectioneightimagethree.png";
 import abuzar from "../../../assets/png/abuzar.png";
+import abuzartwo from "../../../assets/png/Abuzar-three.jpeg";
 import sectioneifhtbg from "../../../assets/images/sectioneifhtbg.jpeg";
 // import Button from "../../../component/Button/Button";
 
@@ -69,7 +70,7 @@ const SectionEight = () => {
           <div className="w-full relative">
             <img src={sectioneifhtbg} alt="bg" className="absolute -z-10" />
             <img
-              src={abuzar}
+              src={abuzartwo}
               alt="AI feature"
               className="max-h-[255px] object-cover w-full"
             />
