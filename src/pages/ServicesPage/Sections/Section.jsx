@@ -16,6 +16,7 @@ import { useKeenSlider } from "keen-slider/react";
 import Modal from "../../../component/Modal/Modal";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 const animation = { duration: 20000, easing: (t) => t };
 
@@ -100,10 +101,16 @@ const Section = () => {
   const closeModal = () => {
     setOpenModal("");
   };
+
+  const { ref: refOne, inView: inViewOne } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
   return (
     <>
       <div className="w-screen ">
         <div
+          ref={refOne}
           className="relative flex  z-0  items-center bg-contain bg-center bg-no-repeat flex-col  mx-auto  min-h-full bg-[#080719] text-white overflow-hidden"
           // style={{ backgroundImage: `url(${homeicon})` }}
         >
@@ -139,7 +146,13 @@ const Section = () => {
             </div>
           </div>
 
-          <div className="flex w-full text-white gap-5 xl:px-28 2xl:px-52  flex-wrap justify-center mt-20 ">
+          <div
+            className={`flex w-full text-white gap-5 xl:px-28 2xl:px-52  flex-wrap justify-center mt-20 transition-transform duration-500 ease-out ${
+              inViewOne
+                ? "translate-y-0 opacity-100"
+                : "translate-y-20 opacity-0"
+            }`}
+          >
             {servicesDetails.map((ser, indx) => (
               <div
                 key={indx}

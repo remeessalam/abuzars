@@ -4,6 +4,7 @@ import Component from "../../../assets/svg/Component4.svg";
 import Button from "../../../component/Button/Button";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import { useInView } from "react-intersection-observer";
 
 const animation = { duration: 20000, easing: (t) => t };
 
@@ -28,6 +29,15 @@ const Section = () => {
     },
   });
 
+  const { ref: refOne, inView: inViewOne } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: refTwo, inView: inViewTwo } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
   return (
     <div
       className="relative flex justify-center items-center flex-col  min-h-full bg-[#080719] text-white overflow-hidden md:w-[95%] lg:w-[80%] w-full mx-auto"
@@ -43,12 +53,26 @@ const Section = () => {
           </h3>
         </div>
         <div className="flex justify-center">
-          <h2 className="text-[35px] mt-3 sm:mt-10 md:mt-0 md:text-[54px] text-center leading-tight max-w-[90%] sm:max-w-[70%] md:leading-[65px]">
+          <h2
+            ref={refOne}
+            className={`text-[35px] mt-3 sm:mt-10 md:mt-0 md:text-[54px] text-center leading-tight max-w-[90%] sm:max-w-[70%] md:leading-[65px] transition-transform duration-500 ease-out ${
+              inViewOne
+                ? "translate-y-0 opacity-100"
+                : "translate-y-20 opacity-0"
+            }`}
+          >
             Revolutionizing Industries, One Data-Driven Solution at a Time
           </h2>
         </div>
         <div className="flex justify-center mt-[10px]">
-          <p className="max-w-[718px] text-center text-base text-[#BABCC6]">
+          <p
+            ref={refTwo}
+            className={`max-w-[718px] text-center text-base delay-100 text-[#BABCC6] transition-transform duration-500 ease-out ${
+              inViewTwo
+                ? "translate-y-0 opacity-100"
+                : "translate-y-20 opacity-0"
+            }`}
+          >
             BlueBillionaire.ai is a leading innovator in AI and data-driven
             business solutions, empowering companies to thrive in the digital
             era. We specialize in crafting tailored, transformative strategies

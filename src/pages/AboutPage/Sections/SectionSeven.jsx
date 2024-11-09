@@ -1,6 +1,17 @@
+import { useInView } from "react-intersection-observer";
+
 const SectionSeven = () => {
+  const { ref: refOne, inView: inViewOne } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
   return (
-    <div className="flex flex-col items-center mt-20 md:w-[95%]  lg:w-[80%] text-white w-full mx-auto">
+    <div
+      ref={refOne}
+      className={`flex flex-col items-center mt-20 md:w-[95%]  lg:w-[80%] text-white w-full mx-auto transition-transform duration-500 ease-out ${
+        inViewOne ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+      }`}
+    >
       <div className="w-full flex flex-col items-center md:items-start">
         <h3 className="text-[#F5F5F5] w-fit text-[10px] rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white">
           {"FAQS".toUpperCase()}

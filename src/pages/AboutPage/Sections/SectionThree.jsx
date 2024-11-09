@@ -1,7 +1,12 @@
+import { useInView } from "react-intersection-observer";
 import userimage from "../../../assets/images/userimage.jpeg";
 import userimage2 from "../../../assets/images/userimage2.jpeg";
 import linkedinvector from "../../../assets/svg/linkedinvector.svg";
 const SectionThree = () => {
+  const { ref: refOne, inView: inViewOne } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
   return (
     <div className="flex items-center flex-col text-white mt-12">
       <div>
@@ -9,7 +14,12 @@ const SectionThree = () => {
           {"our team".toUpperCase()}
         </h3>
       </div>
-      <div>
+      <div
+        ref={refOne}
+        className={`transition-transform duration-500 ease-out ${
+          inViewOne ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+        }`}
+      >
         <h2 className="text-[38px] text-center leading-[45px] mt-4 font-extrabold">
           Meet the team
           <br /> behind
