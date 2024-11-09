@@ -31,13 +31,19 @@ const appRouter = createBrowserRouter([
     ],
   },
   {
-    path: "/",
+    path: "/webdevelopment",
     element: <Applayoutlandingpage />,
     children: [
       {
         path: "webdevelopment",
         element: <LandingPage page={"web"} />,
       },
+    ],
+  },
+  {
+    path: "/appdevelopment",
+    element: <Applayoutlandingpage />,
+    children: [
       {
         path: "appdevelopment",
         element: <LandingPage page={"mob"} />,
