@@ -83,8 +83,9 @@ const Section = () => {
       </div>
       <div className="flex flex-col items-center mt-[80px]  z-10">
         <div className="group h-[365px] overflow-hidden w-[95%] md:w-[77.1%]">
+          {/* transition-transform duration-500 group-hover:scale-105 animate-scaleInOut */}
           <img
-            className="rounded-t-[50px] md:rounded-t-[82px] h-[420px] w-full object-cover transition-transform duration-500 group-hover:scale-105 animate-scaleInOut"
+            className="rounded-t-[50px] md:rounded-t-[82px] h-[420px] w-full object-cover "
             src={homePageImage1}
             alt="homePageImage1"
           />
