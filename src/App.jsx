@@ -28,11 +28,11 @@ const appRouter = createBrowserRouter([
         element: <ContactusPage />,
       },
       {
-        path: "/webpage",
+        path: "/webdevelopment",
         element: <LandingPage page={"web"} />,
       },
       {
-        path: "/mobilepage",
+        path: "/appdevelopment",
         element: <LandingPage page={"mob"} />,
       },
     ],
