@@ -39,7 +39,7 @@ const SectionSeven = () => {
             <div className="bg-aboutas-gradient h-[.5px]" />
           </div>
         </div>
-        <div className="flex flex- gap-5 items-center md:items-start md:flex-row">
+        <div className="flex flex-col gap-5 items-center md:items-start md:flex-row">
           <div className="flex flex-col w-[90%] md:w-1/2 bg-[#08081b]">
             <div className="bg-aboutas-gradient h-[.5px]" />
             <div className=" py-5 px-3">

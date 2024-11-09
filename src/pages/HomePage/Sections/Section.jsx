@@ -53,10 +53,10 @@ const Section = () => {
         <div className="flex justify-center mt-[58px]">
           <p className="max-w-[718px] text-center px-2 sm:px-0 text-base text-[#BABCC6]">
             Where Data Meets Innovation: Empowering Your Business with Smart
-            Insights <br /> Imagine a world where data transcends mere numbers
-            to become the key that unlocks limitless possibilities.
-            <br /> At BlueBillionaire.ai, we don’t just process data—we unleash
-            its transformative power.
+            Insights Imagine a world where data transcends mere numbers to
+            become the key that unlocks limitless possibilities. At
+            BlueBillionaire.ai, we don’t just process data—we unleash its
+            transformative power.
           </p>
         </div>
         <div className="flex justify-center h-[43px] gap-3 mt-[24px]">

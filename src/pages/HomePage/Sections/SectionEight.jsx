@@ -1,8 +1,10 @@
-import imageone from "../../../assets/png/sectioneightimageone.png";
-import imagetwo from "../../../assets/png/sectioneightimagetwo.png";
-import imagethree from "../../../assets/png/sectioneightimagethree.png";
+// import imageone from "../../../assets/png/sectioneightimageone.png";
+// import imagetwo from "../../../assets/png/sectioneightimagetwo.png";
+// import imagethree from "../../../assets/png/sectioneightimagethree.png";
+import abuzar from "../../../assets/png/abuzar.png";
 import sectioneifhtbg from "../../../assets/images/sectioneifhtbg.jpeg";
-import Button from "../../../component/Button/Button";
+// import Button from "../../../component/Button/Button";
+
 const SectionEight = () => {
   return (
     <div className="md:w-[95%] lg:w-[80%] w-full mx-auto text-white flex-col flex items-center mt-28">
@@ -18,49 +20,79 @@ const SectionEight = () => {
         </h3>
       </div>
       <div>
-        <p className="font-normal max-w-[315px] text-center text-base text-[#BABCC6] leading-6">
-          Lorem ipsum dolor sit amet consectetur iaculis viverra amet pulvinar
-          vitae ultrices arcu gravida odio diam gravida congue.
+        <p className="font-normal md:max-w-[515px] text-center sm:px-0 px-2 text-base text-[#BABCC6] leading-6">
+          Stay updated with the latest insights, trends, and stories. Discover
+          articles that bring you closer to the world of innovation and industry
+          developments.
         </p>
       </div>
       <div className="flex mb-10 w-full flex-wrap lg:flex-nowrap justify-center mt-10 gap-10">
-        <div className="w-[80%] md:w-1/3 relative pb-7 rounded-lg overflow-hidden">
+        {/* <Link
+          to={
+            "https://hindustanbusinesstimes.com/2024/10/21/bluebillionaire-ais-ai-tools-revolutionize-healthcare-management/"
+          }
+        > */}
+        <div
+          onClick={() =>
+            window.open(
+              "https://hindustanbusinesstimes.com/2024/10/21/bluebillionaire-ais-ai-tools-revolutionize-healthcare-management/",
+              "_blank"
+            )
+          }
+          className="w-[80%] md:w-1/3 relative pb-7 rounded-lg overflow-hidden"
+        >
           <div className="w-full relative">
             <img src={sectioneifhtbg} alt="bg" className="absolute -z-10" />
-            <img src={imageone} alt="AI feature" />
+            <img
+              src={abuzar}
+              alt="AI feature"
+              className="max-h-[255px] object-cover w-full"
+            />
           </div>
           <div className="px-5 mt-10">
             <div className="flex items-center text-sm font-normal text-[#BABCC6]">
               <h4 className="border-r  border-[#BABCC6] pr-3 leading-4 h-[15px]">
                 Company
               </h4>
-              <h4 className="pl-3">Aug 8, 2023</h4>
+              <h4 className="pl-3">Oct 21, 2024</h4>
             </div>
             <p className="text-base font-medium mt-3">
-              Simplify ML workflow using AI+’s automation feature
+              Bluebillionaire.ai’s AI Tools Revolutionize Healthcare Management
             </p>
           </div>
           <div className="absolute bottom-1 left-[28px] h-[.5px]  w-[80%] bg-custom-radial opacity-55" />
         </div>
-        <div className=" w-[80%] md:w-1/3 relative pb-7 rounded-lg overflow-hidden">
+        {/* </Link> */}
+        <div
+          onClick={() =>
+            window.open(
+              "https://entrepreneurstreet.in/how-abuzars-education-shaped-his-ai-career/"
+            )
+          }
+          className=" cursor-pointer w-[80%] md:w-1/3 relative pb-7 rounded-lg overflow-hidden "
+        >
           <div className="w-full relative">
             <img src={sectioneifhtbg} alt="bg" className="absolute -z-10" />
-            <img src={imagetwo} alt="AI feature" />
+            <img
+              src={abuzar}
+              alt="AI feature"
+              className="max-h-[255px] object-cover w-full"
+            />
           </div>
           <div className="px-5 mt-10">
             <div className="flex items-center text-sm font-normal text-[#BABCC6]">
               <h4 className="border-r  border-[#BABCC6] pr-3 leading-4 h-[15px]">
-                Product
+                Company
               </h4>
-              <h4 className="pl-3">Aug 8, 2023</h4>
+              <h4 className="pl-3">Oct 21, 2024</h4>
             </div>
             <p className="text-base font-medium mt-3">
-              Expanding language-model capabilities beyond English
+              How Abuzar’s Education Shaped His AI Career
             </p>
           </div>
           <div className="absolute bottom-1 left-[28px] h-[.5px]  w-[80%] bg-custom-radial opacity-55" />
         </div>
-        <div className="  w-[80%] md:w-1/3 relative pb-7 rounded-lg overflow-hidden">
+        {/* <div className="  w-[80%] md:w-1/3 relative pb-7 rounded-lg overflow-hidden">
           <div className="w-full relative">
             <img src={sectioneifhtbg} alt="bg" className="absolute -z-10" />
             <img src={imagethree} alt="AI feature" />
@@ -77,10 +109,10 @@ const SectionEight = () => {
             </p>
           </div>
           <div className="absolute bottom-1 left-[28px] h-[.5px]  w-[80%] bg-custom-radial opacity-55" />
-        </div>
+        </div> */}
       </div>
       {/* <button className="mt-10">Browse all articles</button> */}
-      <Button buttonName={"Browse all articles"} />
+      {/* <Button buttonName={"Browse all articles"} /> */}
     </div>
   );
 };

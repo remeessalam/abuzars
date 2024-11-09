@@ -10,13 +10,15 @@ const Header = () => {
       <div className="flex  justify-center bg-[#080719] w-full h-28 text-white font-normal text-sm transition-all duration-200">
         <div className="flex md:justify-around md:w-[90%] w-full items-center py-5 justify-between">
           <div className="md:w-[142px] md:h-[72px] w-[122px] h-[52px] transition-all duration-800">
-            <img
-              src={Logo}
-              alt="Logo"
-              // width={142}
-              // height={72}
-              className="w-full h-full"
-            />
+            <Link to="/">
+              <img
+                src={Logo}
+                alt="Logo"
+                // width={142}
+                // height={72}
+                className="w-full h-full"
+              />
+            </Link>
           </div>
           <div className="md:flex hidden ">
             <ul className="flex gap-10">
