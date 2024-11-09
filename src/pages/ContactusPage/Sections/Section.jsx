@@ -40,7 +40,9 @@ const Section = () => {
                 <h4 className="font-normal text-sm text-[#858892]">
                   Send us a message
                 </h4>
-                <h3 className="text-sm font-medium">contact@aixplus.com</h3>
+                <h3 className="text-sm font-medium">
+                  abuzar@bluebillionaireai.com
+                </h3>
               </div>
             </div>
             <div className="flex  gap-3">
@@ -53,7 +55,7 @@ const Section = () => {
                 <h4 className="font-normal text-sm text-[#858892]">
                   Give us a call
                 </h4>
-                <h3 className="text-sm font-medium">(414) 850 - 7236</h3>
+                <h3 className="text-sm font-medium">+91 9666296965</h3>
               </div>
             </div>
           </div>
