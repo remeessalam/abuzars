@@ -16,13 +16,49 @@ import flags from "../assets/svg/flags.svg";
 // import { Link } from "react-router-dom";
 import Button from "../Components/Button/Buttton";
 import PropTypes from "prop-types";
+import { useEffect, useRef, useState } from "react";
 
 const SectionTwo = ({ page }) => {
+  const [isInView, setIsInView] = useState(false);
+  const [isImageTwoInView, setIsImageTwoInView] = useState(false);
+  const imageRef = useRef(null);
+  const imageTwoRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.unobserve(entry.target); // Stop observing once in view
+        }
+        if (entry.target === imageTwoRef.current && entry.isIntersecting) {
+          setIsImageTwoInView(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.1 } // Trigger when 10% of the image is in view
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+    if (imageTwoRef.current) observer.observe(imageTwoRef.current);
+
+    return () => {
+      if (imageRef.current) observer.unobserve(imageRef.current);
+      if (imageTwoRef.current) observer.unobserve(imageTwoRef.current);
+    };
+  }, []);
   return (
     <div className="md:w-[95%] lg:w-[80%] w-full mx-auto md:mt-[120px] mt-[60px]  h-full relative z-10">
       <div className="flex-col md:flex-row justify-center items-center md:justify-normal md:items-start flex h-full">
-        <div className="md:w-1/2 w-3/4 min-h-full my-auto transition-all duration-500 rounded-xl overflow-hidden">
+        <div
+          className={`md:w-1/2 w-3/4 min-h-full my-auto  rounded-xl overflow-hidden transition-all duration-1000 ${
+            isInView ? "translate-x-0 opacity-100" : "-translate-x-28 opacity-0"
+          }`}
+        >
           <img
+            ref={imageRef}
             src={page === "web" ? sectionTwoImageOne : mobilesetiontwoimage}
             alt=""
             width={642}
@@ -85,8 +121,15 @@ const SectionTwo = ({ page }) => {
       </div>
 
       <div className="flex lg:flex-row flex-col justify-between items-center mt-10 ">
-        <div className="md:w-1/2 w-3/4 ">
+        <div
+          className={`md:w-1/2 w-3/4 transition-all duration-1000 ${
+            isImageTwoInView
+              ? "translate-x-0 opacity-100"
+              : "-translate-x-28 opacity-0"
+          }`}
+        >
           <img
+            ref={imageTwoRef}
             src={page === "web" ? sectionTwoImageTwo : mobilesetionimagetwo}
             alt=""
             className="w-[552px] sm:h-[360px] object-cover rounded-lg overflow-hidden"
