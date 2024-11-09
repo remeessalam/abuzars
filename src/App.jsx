@@ -4,6 +4,7 @@ import AppLayout from "./Layout/AppLayout";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ServicesPage from "./pages/ServicesPage/ServicesPage";
 import ContactusPage from "./pages/ContactusPage/ContactusPage";
+import LandingPage from "./landingpage/src/pages/LandingPage/LandingPage";
 
 const appRouter = createBrowserRouter([
   {
@@ -25,6 +26,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/contactus",
         element: <ContactusPage />,
+      },
+      {
+        path: "/webpage",
+        element: <LandingPage page={"web"} />,
+      },
+      {
+        path: "/mobilepage",
+        element: <LandingPage page={"mob"} />,
       },
     ],
   },
