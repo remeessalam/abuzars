@@ -21,6 +21,7 @@ const Applayoutlandingpage = ({ page }) => {
       });
     }
   };
+  console.log(page, "asjdkfhajsdfh");
   return (
     <div className="bg-[#080719]">
       <Header
