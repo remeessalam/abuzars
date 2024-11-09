@@ -27,7 +27,7 @@ const SectionTwo = () => {
           <h3 className="text-[#F5F5F5] w-fit text-[10px] rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white">
             {"Who we are".toUpperCase()}
           </h3>
-          <h2 className="text-[38px] font-medium text-start leading-[65px]">
+          <h2 className="text-[38px] font-medium text-start leading-[65px] leading-tight">
             Your Vision, Amplified by AI Innovation
           </h2>
           <p className="max-w-[718px] text-start text-base text-[#BABCC6]">

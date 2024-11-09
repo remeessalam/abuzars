@@ -5,8 +5,17 @@ import sectionthreeimagethree from "../../../assets/images/sectionthreeimagethre
 import cloud from "../../../assets/svg/cloud.svg";
 import setting from "../../../assets/svg/setting.svg";
 import tick from "../../../assets/svg/tick.svg";
+import { useInView } from "react-intersection-observer";
 
 const SectionThree = () => {
+  const { ref: refOne, inView: inViewOne } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const { ref: refTwo, inView: inViewTwo } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
   return (
     <div
       className="relative flex flex-col items-center text-white md:pt-[120px] pt-[60px]"
@@ -25,11 +34,21 @@ const SectionThree = () => {
         </h3>
       </div>
       <div className="mt-3 z-10">
-        <h2 className="text-[54px] text-center leading-[65px]">
+        <h2
+          ref={refOne}
+          className={`text-[54px] text-center leading-[65px] transition-transform duration-500 ease-out ${
+            inViewOne ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+          }`}
+        >
           Meet Our Process
         </h2>
       </div>
-      <div className="mt-3 z-10">
+      <div
+        ref={refTwo}
+        className={`mt-3 z-10 transition-transform duration-500 ease-out ${
+          inViewTwo ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+        }`}
+      >
         <p className="text-center text-base text-[#BABCC6] max-w-[523px]">
           At BlueBillionaire.ai, we believe that our success is deeply
           intertwined with the effectiveness of our processes. Our streamlined

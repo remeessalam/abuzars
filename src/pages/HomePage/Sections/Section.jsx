@@ -6,6 +6,7 @@ import Button from "../../../component/Button/Button";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { Link } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 const animation = { duration: 20000, easing: (t) => t };
 
@@ -30,6 +31,11 @@ const Section = () => {
     },
   });
 
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
   return (
     <div
       className="relative flex justify-center items-center bg-cover bg-center flex-col  w-screen mx-auto  min-h-full bg-[#080719] text-white overflow-hidden"
@@ -39,18 +45,23 @@ const Section = () => {
       {/* <div className="absolute -top-[16%] w-full opacity-100 z-0 h-full">
         <img src={homeicon} alt="" className="w-full align-middle h-full" />
       </div> */}
-      <div className="flex flex-col z-10 overflow-hidden">
+      <div className="flex flex-col z-10 overflow-hidden mt-3 mb-4 sm:mb-0 sm:mt-2">
         <div className="flex justify-center">
           <h3 className="text-[#F5F5F5] text-[10px] rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white">
             {"Welcome to BlueBillionaire.ai".toUpperCase()}
           </h3>
         </div>
-        <div className="flex justify-center">
+        <div
+          ref={ref}
+          className={`text-[54px] text-center leading-[65px] transition-transform duration-1000 ease-out ${
+            inView ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
+        >
           <h2 className="text-[54px] text-center leading-[65px]">
             Embarking on a Journey <br /> of Data-Driven <br /> Innovation
           </h2>
         </div>
-        <div className="flex justify-center mt-[58px]">
+        <div className="flex justify-center mt-[28px]">
           <p className="max-w-[718px] text-center px-2 sm:px-0 text-base text-[#BABCC6]">
             Where Data Meets Innovation: Empowering Your Business with Smart
             Insights Imagine a world where data transcends mere numbers to

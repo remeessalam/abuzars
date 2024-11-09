@@ -38,12 +38,12 @@ const Section = () => {
       </div>
       <div className="flex flex-col z-10 overflow-hidden">
         <div className="flex justify-center">
-          <h3 className="text-[#F5F5F5] text-[10px] rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white">
+          <h3 className="text-[#F5F5F5] sm:mt-0 mt-3 text-[10px] rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white">
             {"About us".toUpperCase()}
           </h3>
         </div>
         <div className="flex justify-center">
-          <h2 className="text-[35px] mt-10 md:mt-0 md:text-[54px] text-center leading-[30px] max-w-[90%] sm:max-w-[70%] md:leading-[65px]">
+          <h2 className="text-[35px] mt-3 sm:mt-10 md:mt-0 md:text-[54px] text-center leading-tight max-w-[90%] sm:max-w-[70%] md:leading-[65px]">
             Revolutionizing Industries, One Data-Driven Solution at a Time
           </h2>
         </div>
@@ -65,7 +65,7 @@ const Section = () => {
         </div>
       </div>
 
-      <h3 className="mt-[135px] sm:mt-[175px] z-10 max-w-[399px] font-medium text-lg text-white text-center">
+      <h3 className="mt-[85px] sm:mt-[175px] z-10 max-w-[399px] font-medium text-lg text-white text-center">
         Trusted by the best brands around the world
       </h3>
 

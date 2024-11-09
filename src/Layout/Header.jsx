@@ -67,16 +67,25 @@ const Header = () => {
       >
         <ul className="flex flex-col w-full h-full p-6 justify-between">
           <li className="w-full " onClick={() => setOpenMenu(false)}>
-            <Link to="/">Home</Link>
+            <Link to="/" className="w-full ">
+              Home
+            </Link>
           </li>
           <li className="w-full " onClick={() => setOpenMenu(false)}>
-            <Link to="/about">About</Link>
+            <Link to="/about" className="w-full ">
+              About
+            </Link>
           </li>
           <li className="w-full " onClick={() => setOpenMenu(false)}>
-            <Link to="/services">Sevices</Link>
+            <Link to="/services" className="w-full ">
+              Sevices
+            </Link>
           </li>
           <li className="w-full " onClick={() => setOpenMenu(false)}>
-            <Link to="/contactus"> Contact</Link>
+            <Link to="/contactus" className="w-full ">
+              {" "}
+              Contact
+            </Link>
           </li>
         </ul>
         <div className="pl-6 pb-6 flex flex-col gap-6">

@@ -47,7 +47,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="lg:w-1/4 md:w-1/2 md:pt-[122px]">
+      <div className="lg:w-1/4 md:w-1/2 md:pt-[122px] sm:my-0 my-6">
         <h2 className="font-semibold text-2xl">
           Company
           <ul className="mt-3">
