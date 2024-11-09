@@ -47,7 +47,7 @@ const SectionTwo = () => {
         <h2 className="text-center  font-semibold text-4xl">
           FREQUENTLY ASKED QUESTIONS
         </h2>
-        <div className="flex flex-col gap-4 items-center w-[100%] sm:w-[70%] mt-12 mx-auto px-1">
+        <div className="flex flex-col gap-4 items-center w-[100%] sm:w-[70%] mt-12 mx-auto px-4">
           {questions.map((q, index) => (
             <div
               key={q}
