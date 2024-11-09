@@ -25,7 +25,7 @@ const Section = () => {
             Get in touch
             <br /> with us today
           </h2>
-          <p className=" max-w-[55%] mt-[15px] text-center sm:text-start text-base text-[#BABCC6]">
+          <p className="sm:px-0 px-2 sm:max-w-[55%] mt-[15px] text-center sm:text-start text-base text-[#BABCC6]">
             Connect with us today to discover tailored solutions that empower
             your business and drive meaningful growth forward.
           </p>
