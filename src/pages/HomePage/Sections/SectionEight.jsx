@@ -27,11 +27,6 @@ const SectionEight = () => {
         </p>
       </div>
       <div className="flex mb-10 w-full flex-wrap lg:flex-nowrap justify-center mt-10 gap-10">
-        {/* <Link
-          to={
-            "https://hindustanbusinesstimes.com/2024/10/21/bluebillionaire-ais-ai-tools-revolutionize-healthcare-management/"
-          }
-        > */}
         <div
           onClick={() =>
             window.open(
@@ -39,7 +34,7 @@ const SectionEight = () => {
               "_blank"
             )
           }
-          className="w-[80%] md:w-1/3 relative pb-7 rounded-lg overflow-hidden"
+          className="w-[80%] md:w-1/3 relative pb-7 hover:scale-105 cursor-pointer transition-all duration-300 rounded-lg overflow-hidden"
         >
           <div className="w-full relative">
             <img src={sectioneifhtbg} alt="bg" className="absolute -z-10" />
@@ -62,14 +57,14 @@ const SectionEight = () => {
           </div>
           <div className="absolute bottom-1 left-[28px] h-[.5px]  w-[80%] bg-custom-radial opacity-55" />
         </div>
-        {/* </Link> */}
+
         <div
           onClick={() =>
             window.open(
               "https://entrepreneurstreet.in/how-abuzars-education-shaped-his-ai-career/"
             )
           }
-          className=" cursor-pointer w-[80%] md:w-1/3 relative pb-7 rounded-lg overflow-hidden "
+          className="w-[80%] hover:scale-105 cursor-pointer transition-all duration-300 md:w-1/3 relative pb-7 rounded-lg overflow-hidden "
         >
           <div className="w-full relative">
             <img src={sectioneifhtbg} alt="bg" className="absolute -z-10" />

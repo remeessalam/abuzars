@@ -12,11 +12,11 @@ const Footer = () => {
   return (
     <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-between mt-60 md:gap-7 gap-3 bg-[#060F1A] text-white sm:px-20 px-10 py-8 sm:py-16">
       <div className="lg:w-1/4 md:w-1/2 ">
-        <Link to="/">
-          <div>
+        <div>
+          <Link to="/">
             <img src={Logo} alt="" className="w-[238px] h-[122px]" />
-          </div>
-        </Link>
+          </Link>
+        </div>
         <div>
           <p className="text-base font-normal">
             Our innovative solutions are designed not just to meet the demands
