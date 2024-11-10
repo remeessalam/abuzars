@@ -115,7 +115,7 @@ const Section = () => {
 
       <div
         ref={sliderRef}
-        className="relative flex  h-[28px] mt-[24px] keen-slider"
+        className="relative flex  h-[70px] pt-4 mt-[24px] keen-slider"
       >
         <div className="absolute top-0 left-0 w-28 h-full bg-gradient-to-r from-[#080719] to-transparent pointer-events-none z-10"></div>
 
