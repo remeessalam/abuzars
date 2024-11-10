@@ -103,7 +103,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-3 text-[#B5B3B3] font-medium text-lg">
               <img src={message} alt="" className="h-[18px] w-[18px]" />
-              info@bluebillionaire.ai.com
+              abuzar@Bluebillionaireai.com
             </li>
             <li className="flex items-center gap-3 text-[#B5B3B3] font-medium text-lg">
               <img src={callvector} alt="" className="h-[18px] w-[18px]" />
