@@ -93,7 +93,7 @@ const SectionTwo = () => {
               <Button
                 buttonName="Get Started"
                 border={true}
-                divStyle={"max-w-[200px]"}
+                // divStyle={"max-w-[200px]"}
               />
             </Link>
           </div>

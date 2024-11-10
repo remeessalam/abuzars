@@ -52,7 +52,7 @@ const SectionFour = () => {
                 buttonName="Get Started"
                 border={true}
                 style={""}
-                divStyle={"w-[200px]"}
+                // divStyle={"w-[200px]"}
               />
             </Link>
           </div>
