@@ -66,27 +66,27 @@ const Header = () => {
         } transition-all duration-700 bg-[#080719] w-full text-white border-y border-[#505362]`}
       >
         <ul className="flex flex-col w-full h-full p-6 justify-between">
-          <li className="w-full " onClick={() => setOpenMenu(false)}>
-            <Link to="/" className="w-full ">
+          <Link to="/" className="w-full ">
+            <li className="w-full " onClick={() => setOpenMenu(false)}>
               Home
-            </Link>
-          </li>
-          <li className="w-full " onClick={() => setOpenMenu(false)}>
-            <Link to="/about" className="w-full ">
+            </li>
+          </Link>
+          <Link to="/about" className="w-full ">
+            <li className="w-full " onClick={() => setOpenMenu(false)}>
               About
-            </Link>
-          </li>
-          <li className="w-full " onClick={() => setOpenMenu(false)}>
-            <Link to="/services" className="w-full ">
+            </li>
+          </Link>
+          <Link to="/services" className="w-full ">
+            <li className="w-full " onClick={() => setOpenMenu(false)}>
               Sevices
-            </Link>
-          </li>
-          <li className="w-full " onClick={() => setOpenMenu(false)}>
-            <Link to="/contactus" className="w-full ">
+            </li>
+          </Link>
+          <Link to="/contactus" className="w-full ">
+            <li className="w-full " onClick={() => setOpenMenu(false)}>
               {" "}
               Contact
-            </Link>
-          </li>
+            </li>
+          </Link>
         </ul>
         <div className="pl-6 pb-6 flex flex-col gap-6">
           {/* <Button buttonName={"Sign in"} style={""} border={false} /> */}
