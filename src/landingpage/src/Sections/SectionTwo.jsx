@@ -1,17 +1,17 @@
 import sectionTwoImageOne from "../assets/images/sectionTwoImageOne.png";
 import mobilesetiontwoimage from "../assets/images/mobilesetiontwoimage.jpeg";
-import sectionTwoImageTwo from "../assets/images/sectionTwoImageTwo.jpeg";
-import mobilesetionimagetwo from "../assets/images/mobilesetionimagetwo.jpeg";
+// import sectionTwoImageTwo from "../assets/images/sectionTwoImageTwo.jpeg";
+// import mobilesetionimagetwo from "../assets/images/mobilesetionimagetwo.jpeg";
 // import sectionTwoImageAR from "../assets/images/sectionTwoImageAR.jpg";
-import roundedHeart from "../assets/svg/rounded-heart.svg";
+// import roundedHeart from "../assets/svg/rounded-heart.svg";
 // import chinese from "../assets/svg/chinese.svg";
-import socialmedia from "../assets/svg/socialmedia.svg";
-import landingpage from "../assets/svg/landing-page.svg";
-import customweb from "../assets/svg/customweb.svg";
-import ios from "../assets/svg/ios.svg";
-import android from "../assets/svg/android.svg";
-import hybrid from "../assets/svg/hybrid.svg";
-import flags from "../assets/svg/flags.svg";
+// import socialmedia from "../assets/svg/socialmedia.svg";
+// import landingpage from "../assets/svg/landing-page.svg";
+// import customweb from "../assets/svg/customweb.svg";
+// import ios from "../assets/svg/ios.svg";
+// import android from "../assets/svg/android.svg";
+// import hybrid from "../assets/svg/hybrid.svg";
+// import flags from "../assets/svg/flags.svg";
 // import setting from "../assets/svg/setting.svg";
 // import { Link } from "react-router-dom";
 import Button from "../Components/Button/Buttton";
@@ -21,31 +21,31 @@ import { useEffect, useRef, useState } from "react";
 const SectionTwo = ({ page }) => {
   const [isInView, setIsInView] = useState(false);
   const imageRef = useRef(null);
-  const imageTwoRef = useRef(null);
+  // const imageTwoRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsInView(true);
-          observer.unobserve(entry.target); // Stop observing once in view
-        }
-        if (entry.target === imageTwoRef.current && entry.isIntersecting) {
-          setIsImageTwoInView(true);
           observer.unobserve(entry.target);
         }
+        // if (entry.target === imageTwoRef.current && entry.isIntersecting) {
+        //   setIsImageTwoInView(true);
+        //   observer.unobserve(entry.target);
+        // }
       },
-      { threshold: 0.1 } // Trigger when 10% of the image is in view
+      { threshold: 0.1 }
     );
 
     if (imageRef.current) {
       observer.observe(imageRef.current);
     }
-    if (imageTwoRef.current) observer.observe(imageTwoRef.current);
+    // if (imageTwoRef.current) observer.observe(imageTwoRef.current);
 
     return () => {
       if (imageRef.current) observer.unobserve(imageRef.current);
-      if (imageTwoRef.current) observer.unobserve(imageTwoRef.current);
+      // if (imageTwoRef.current) observer.unobserve(imageTwoRef.current);
     };
   }, []);
   return (
@@ -89,7 +89,7 @@ const SectionTwo = ({ page }) => {
             <Button
               buttonName="Get Started"
               border={true}
-              divStyle={"max-w-[200px]"}
+              // divStyle={"max-w-[200px]"}
             />
             {/* </Link> */}
           </div>

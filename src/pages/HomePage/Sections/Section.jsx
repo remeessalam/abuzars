@@ -3,7 +3,7 @@ import homePageImage1 from "../../../assets/images/homePageImage1.jpeg";
 import homePageBottomImage from "../../../assets/images/homePageBottomImage.jpeg";
 import Component from "../../../assets/svg/Component4.svg";
 import Button from "../../../component/Button/Button";
-import ThreeDCardDemo from "../../../component/ThreeD/ThreeDCardDemo";
+// import ThreeDCardDemo from "../../../component/ThreeD/ThreeDCardDemo";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { Link } from "react-router-dom";

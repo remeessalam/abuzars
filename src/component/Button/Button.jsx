@@ -6,13 +6,13 @@ const Button = ({ buttonName, border, style, divStyle }) => {
       {border ? (
         <div
           className={
-            "relative inline-block  p-[2px] overflow-hidden text-white rounded-lg bg-gradient-to-r from-[#BED8FF] to-[#3D96FF] transition-transform duration-200 hover:scale-105" +
+            "relative inline-block  p-[2px] overflow-hidden text-white rounded-lg bg-gradient-to-r from-[#BED8FF] to-[#3D96FF]" +
             divStyle
           }
         >
           <button
             className={
-              "bg-[#080719] shadow-11xl shadow-[#3D96FF] rounded-lg px-[23px] py-[6px] font-normal text-base w-full h-full " +
+              "bg-[#080719] shadow-11xl shadow-[#3D96FF] rounded-lg px-[23px] py-[6px] font-normal text-base w-full h-full transition-transform duration-200 hover:scale-105" +
               style
             }
           >
