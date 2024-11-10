@@ -106,16 +106,18 @@ const Section = () => {
     triggerOnce: true,
     threshold: 0.2,
   });
-
+  console.log(inViewOne, "aksldfjasdklfj");
   return (
     <>
       <div className="w-screen ">
         <div
-          ref={refOne}
           className="relative flex  z-0  items-center bg-contain bg-center bg-no-repeat flex-col  mx-auto  min-h-full bg-[#080719] text-white overflow-hidden"
           // style={{ backgroundImage: `url(${homeicon})` }}
         >
-          <div className="absolute top-0 left-0 -z-30 h-screen w-screen">
+          <div
+            ref={refOne}
+            className="absolute top-0 left-0 -z-30 h-screen w-screen"
+          >
             <img
               src={homeicon}
               alt="homeicon"
