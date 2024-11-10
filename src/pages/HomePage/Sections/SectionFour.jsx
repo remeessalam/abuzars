@@ -17,7 +17,7 @@ const SectionFour = () => {
       <div className="absloute top-0">
         <img src={bg} alt="Backgroun-Image" className="min-h-[354px]" />
       </div>
-      <div className="absolute top-0 w-full text-white text-center mt-10 sm:mt-20">
+      <div className="absolute top-0 w-full text-white text-center mt-8 sm:mt-20">
         <div className="w-full flex justify-center flex-col text-center">
           <h3
             ref={refOne}
