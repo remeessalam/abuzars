@@ -24,13 +24,13 @@ const SectionTwo = () => {
       </div> */}
       <div className="flex md:flex-row flex-col w-full min-h-[506px] px-3 sm:pl-11 gap-4">
         <div className="flex mt-5 md:mt-0 w-full md:w-[45%] flex-col justify-center items-start pr-6">
-          <h3 className="text-[#F5F5F5] w-fit text-[10px] rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white">
+          <h3 className="text-[#F5F5F5] w-fit text-[10px] mb-3 sm:mb-0 rounded-full border px-[18px] py-[10px] shadow-8xl shadow-white">
             {"Who we are".toUpperCase()}
           </h3>
-          <h2 className="text-[38px] font-medium text-start leading-[65px] leading-tight">
+          <h2 className="text-[38px] font-medium text-start  leading-tight">
             Your Vision, Amplified by AI Innovation
           </h2>
-          <p className="max-w-[718px] text-start text-base text-[#BABCC6]">
+          <p className="max-w-[718px] text-start text-base mt-3 sm:mt-0 text-[#BABCC6]">
             We elevate your vision by harnessing the power of AI to deliver
             innovative, data-driven solutions that drive transformative success
           </p>

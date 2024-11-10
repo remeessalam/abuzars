@@ -4,6 +4,7 @@
 import abuzar from "../../../assets/png/abuzar.png";
 import abuzartwo from "../../../assets/png/Abuzar-three.jpeg";
 import sectioneifhtbg from "../../../assets/images/sectioneifhtbg.jpeg";
+import Button from "../../../component/Button/Button";
 // import Button from "../../../component/Button/Button";
 
 const SectionEight = () => {
@@ -28,15 +29,7 @@ const SectionEight = () => {
         </p>
       </div>
       <div className="flex mb-10 w-full flex-wrap lg:flex-nowrap justify-center mt-10 gap-10">
-        <div
-          onClick={() =>
-            window.open(
-              "https://hindustanbusinesstimes.com/2024/10/21/bluebillionaire-ais-ai-tools-revolutionize-healthcare-management/",
-              "_blank"
-            )
-          }
-          className="w-[80%] md:w-1/3 relative pb-7 hover:scale-105 cursor-pointer transition-all duration-300 rounded-lg overflow-hidden"
-        >
+        <div className="w-[80%] md:w-1/3 relative pb-7 hover:scale-105 cursor-pointer transition-all duration-300 rounded-lg overflow-hidden">
           <div className="w-full relative">
             <img src={sectioneifhtbg} alt="bg" className="absolute -z-10" />
             <img
@@ -56,17 +49,25 @@ const SectionEight = () => {
               Bluebillionaire.ai’s AI Tools Revolutionize Healthcare Management
             </p>
           </div>
+          <div className="w-full flex justify-center mt-4">
+            <button
+              className={
+                "border w-[90%] border-[#505362] text-white   rounded-lg px-[25px] py-[8px] font-normal text-base transition-transform duration-200 hover:scale-105"
+              }
+              onClick={() =>
+                window.open(
+                  "https://hindustanbusinesstimes.com/2024/10/21/bluebillionaire-ais-ai-tools-revolutionize-healthcare-management/",
+                  "_blank"
+                )
+              }
+            >
+              Learn more
+            </button>
+          </div>
           <div className="absolute bottom-1 left-[28px] h-[.5px]  w-[80%] bg-custom-radial opacity-55" />
         </div>
 
-        <div
-          onClick={() =>
-            window.open(
-              "https://entrepreneurstreet.in/how-abuzars-education-shaped-his-ai-career/"
-            )
-          }
-          className="w-[80%] hover:scale-105 cursor-pointer transition-all duration-300 md:w-1/3 relative pb-7 rounded-lg overflow-hidden "
-        >
+        <div className="w-[80%] hover:scale-105 cursor-pointer transition-all duration-300 md:w-1/3 relative pb-7 rounded-lg overflow-hidden ">
           <div className="w-full relative">
             <img src={sectioneifhtbg} alt="bg" className="absolute -z-10" />
             <img
@@ -85,6 +86,20 @@ const SectionEight = () => {
             <p className="text-base font-medium mt-3">
               How Abuzar’s Education Shaped His AI Career
             </p>
+          </div>
+          <div className="w-full flex justify-center mt-4">
+            <button
+              className={
+                "border w-[90%] border-[#505362] text-white   rounded-lg px-[25px] py-[8px] font-normal text-base transition-transform duration-200 hover:scale-105"
+              }
+              onClick={() =>
+                window.open(
+                  "https://entrepreneurstreet.in/how-abuzars-education-shaped-his-ai-career/"
+                )
+              }
+            >
+              Learn more
+            </button>
           </div>
           <div className="absolute bottom-1 left-[28px] h-[.5px]  w-[80%] bg-custom-radial opacity-55" />
         </div>
