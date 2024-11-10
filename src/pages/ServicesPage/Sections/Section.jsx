@@ -106,6 +106,7 @@ const Section = () => {
     triggerOnce: true,
     threshold: 0.2,
   });
+
   return (
     <>
       <div className="w-screen ">
@@ -150,7 +151,7 @@ const Section = () => {
             className={`flex w-full text-white gap-5 xl:px-28 2xl:px-52  flex-wrap justify-center mt-20 transition-transform duration-500 ease-out ${
               inViewOne
                 ? "translate-y-0 opacity-100"
-                : "translate-y-20 opacity-0"
+                : "translate-y-20 opacity-100"
             }`}
           >
             {servicesDetails.map((ser, indx) => (
