@@ -67,7 +67,7 @@ const SectionEight = () => {
           <div className="absolute bottom-1 left-[28px] h-[.5px]  w-[80%] bg-custom-radial opacity-55" />
         </div>
 
-        <div className="w-[80%] hover:scale-105 cursor-pointer transition-all duration-300 md:w-1/3 relative pb-7 rounded-lg overflow-hidden ">
+        <div className="flex flex-col justify-between w-[80%] hover:scale-105 cursor-pointer transition-all duration-300 md:w-1/3 relative pb-7 rounded-lg overflow-hidden ">
           <div className="w-full relative">
             <img src={sectioneifhtbg} alt="bg" className="absolute -z-10" />
             <img
