@@ -1,7 +1,7 @@
 import homeicon from "../assets/png/homePageBackground.png";
 // "../../../assets/png/homePageBackground.png";
 import homePageImage1 from "../assets/images/imageone.jpg";
-import homePageImageapp1 from "../assets/images/mobileimageone.jpg";
+import homePageImageapp1 from "../assets/images/mobileimageone-min.jpg";
 import homePageBottomImage from "../assets/images/homePageBottomImage.jpeg";
 import Component from "../assets/svg/Component4.svg";
 import Button from "../Components/Button/Buttton";
