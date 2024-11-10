@@ -72,7 +72,7 @@ const Section = () => {
             viewTwo ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
         >
-          <p className="max-w-[718px] text-center px-2 sm:px-0 text-base text-[#BABCC6]">
+          <p className="max-w-[718px] text-center px-5 sm:px-0 text-base text-[#BABCC6]">
             Where Data Meets Innovation: Empowering Your Business with Smart
             Insights Imagine a world where data transcends mere numbers to
             become the key that unlocks limitless possibilities. At

@@ -22,7 +22,7 @@ const SectionEight = () => {
         </h3>
       </div>
       <div>
-        <p className="font-normal md:max-w-[515px] text-center sm:px-0 px-2 text-base text-[#BABCC6] leading-6">
+        <p className="font-normal md:max-w-[515px] text-center sm:px-0 px-5 text-base text-[#BABCC6] leading-6">
           Stay updated with the latest insights, trends, and stories. Discover
           articles that bring you closer to the world of innovation and industry
           developments.

@@ -33,7 +33,7 @@ const SectionFour = () => {
           </h3>
           <p
             ref={refTwo}
-            className={`text-base font-normal text-[#BABCC6] max-w-[550px] mx-auto mt-2 sm:mt-5 px-1 transition-transform duration-500 ease-out ${
+            className={`text-base font-normal text-[#BABCC6] sm:max-w-[550px] mx-auto mt-2 sm:mt-5 px-3 sm:px-1 transition-transform duration-500 ease-out ${
               inViewTwo
                 ? "translate-y-0 opacity-100"
                 : "translate-y-20 opacity-0"

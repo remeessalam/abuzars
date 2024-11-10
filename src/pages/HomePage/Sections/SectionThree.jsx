@@ -45,11 +45,11 @@ const SectionThree = () => {
       </div>
       <div
         ref={refTwo}
-        className={`mt-3 z-10 transition-transform duration-500 ease-out ${
+        className={`mt-3 z-10 transition-transform duration-500 w-full ease-out ${
           inViewTwo ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
         }`}
       >
-        <p className="text-center text-base text-[#BABCC6] max-w-[523px]">
+        <p className="text-center text-base text-[#BABCC6] sm:px-0 px-3 w-full sm:max-w-[523px]">
           At BlueBillionaire.ai, we believe that our success is deeply
           intertwined with the effectiveness of our processes. Our streamlined
           approach ensures that your projects are executed with precision,

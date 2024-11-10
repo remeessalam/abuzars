@@ -69,7 +69,7 @@ const SectionTwo = () => {
             className=" max-h-[580px] my-auto"
           /> */}
         </div>
-        <div className="flex flex-col gap-4 md:w-1/2 w-3/4  md:py-24 py-12 md:pl-24">
+        <div className="flex flex-col gap-4 md:w-1/2 sm:w-3/4 w-full sm:px-0 px-5  md:py-24 py-12 md:pl-24">
           <h3 className="text-[#F5F5F5] w-24 text-[10px] rounded-full border px-[19px] py-[11px] shadow-8xl shadow-white">
             {"About us".toUpperCase()}
           </h3>
@@ -111,7 +111,7 @@ const SectionTwo = () => {
           </p>
         </div>
 
-        <div className="lg:w-1/2 w-3/4 flex justify-end mt-4 lg:mt-0">
+        <div className="lg:w-1/2 w-full sm:px-0 px-5  sm:w-3/4 flex justify-end mt-4 lg:mt-0">
           <p className="text-base font-normal text-center lg:text-start text-[#BABCC6]">
             At BlueBillionaire.ai, we are dedicated to transforming ideas into
             exceptional digital experiences. Our diverse range of services spans
@@ -145,7 +145,7 @@ const SectionTwo = () => {
             className="w-[552px] sm:h-[360px] object-contain"
           /> */}
         </div>
-        <div className="flex relative flex-col lg:pb-12 pb-0 justify-end lg:ml-[96px] h-[100%] mt-8 lg:mt-0 ml-0 gap-2 text-white md:w-1/2 w-3/4 lg:h-[535px]">
+        <div className="flex relative flex-col lg:pb-12 pb-0 justify-end lg:ml-[96px] h-[100%] mt-8 lg:mt-0 ml-0 gap-2 text-white md:w-1/2 sm:w-3/4 w-full px-5 sm:px-0 lg:h-[535px]">
           <div className="flex w-full items-center">
             <img src={roundedHeart} alt="" />
             <h4 className="sm:text-2xl text-lg font-medium tex ml-4">
@@ -198,8 +198,8 @@ const SectionTwo = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center text-white mt-[59px] gap-4">
-        <div className="relative flex flex-col items-center lg:items-start w-3/4 lg:w-1/2 mt-5 lg:h-[218px]">
+      <div className="flex flex-col lg:flex-row items-center text-white sm:mt-[59px] gap-4">
+        <div className="relative flex flex-col items-center lg:items-start w-full sm:px-0 px-5 sm:w-3/4 lg:w-1/2 mt-5 lg:h-[218px]">
           <div className="flex items-center">
             <img src={setting} alt="" />
             <h4 className="text-2xl font-medium ml-4">
