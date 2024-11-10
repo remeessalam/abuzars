@@ -1,4 +1,4 @@
-import Logo from "../assets/svg/Logo.svg";
+import Logo from "../assets/svg/Logo.png";
 import facebookvector from "../assets/svg/facebookvector.svg";
 import youtubevector from "../assets/svg/youtubevector.svg";
 import twittervector from "../assets/svg/twittervector.svg";
@@ -14,7 +14,11 @@ const Footer = () => {
       <div className="lg:w-1/4 md:w-1/2 ">
         <div>
           <Link to="/">
-            <img src={Logo} alt="" className="w-[238px] h-[122px]" />
+            <img
+              src={Logo}
+              alt=""
+              className="w-[238px] h-[122px] object-cover"
+            />
           </Link>
         </div>
         <div>

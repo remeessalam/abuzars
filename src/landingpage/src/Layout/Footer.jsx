@@ -1,4 +1,4 @@
-import Logo from "../assets/svg/Logo.svg";
+import Logo from "../assets/svg/Logo.png";
 import facebookvector from "../assets/svg/facebookvector.svg";
 import youtubevector from "../assets/svg/youtubevector.svg";
 import twittervector from "../assets/svg/twittervector.svg";
@@ -18,7 +18,7 @@ const Footer = ({
     <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center mt-60 md:gap-7 gap-3 bg-[#060F1A] text-white sm:px-20 px-10 py-8 sm:py-16">
       <div className="lg:w-1/4 md:w-1/2 ">
         <div>
-          <img src={Logo} alt="" className="w-[238px] h-[122px]" />
+          <img src={Logo} alt="" className="w-[238px] h-[122px] object-cover" />
         </div>
         <div>
           <p className="text-base font-normal">
