@@ -1,22 +1,33 @@
 import PropTypes from "prop-types";
 
-const Button = ({ buttonName, border, style, divStyle }) => {
+const Button = ({ buttonName, border, style, divStyle, spinner }) => {
   return (
     <>
       {border ? (
         <div
           className={
-            "relative inline-block  p-[2px] overflow-hidden text-white rounded-lg bg-gradient-to-r from-[#BED8FF] to-[#3D96FF]" +
+            "relative inline-block  p-[2px] overflow-hidden text-white rounded-lg bg-gradient-to-r from-[#BED8FF] to-[#3D96FF] transition-transform duration-200 hover:scale-105" +
             divStyle
           }
         >
           <button
             className={
-              "bg-[#080719] shadow-11xl shadow-[#3D96FF] rounded-lg px-[23px] py-[6px] font-normal text-base w-full h-full transition-transform duration-200 hover:scale-105" +
+              `flex justify-around gap-3 bg-[#080719] shadow-11xl shadow-[#3D96FF] rounded-lg px-[23px] py-[6px] font-normal text-base w-full h-full ` +
               style
             }
           >
-            {buttonName}
+            {spinner ? (
+              <div
+                className={`${
+                  spinner
+                    ? "animate-spin  w-6 h-6 rounded-full border-t border-blue-700"
+                    : ""
+                }`}
+              />
+            ) : (
+              ""
+            )}
+            {spinner ? "Sending..." : buttonName}
           </button>
         </div>
       ) : (
@@ -40,10 +51,12 @@ Button.propTypes = {
   style: PropTypes.string.isRequired,
   divStyle: PropTypes.string.isRequired,
   border: PropTypes.bool,
+  spinner: PropTypes.bool,
 };
 
 Button.defaultProps = {
   border: false,
+  spinner: false,
   style: "",
   divStyle: "",
 };
