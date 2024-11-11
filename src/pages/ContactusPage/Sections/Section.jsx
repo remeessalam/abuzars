@@ -12,9 +12,8 @@ import { toast, ToastContainer } from "react-toastify"; // Ensure toast is impor
 import "react-toastify/dist/ReactToastify.css";
 
 const Section = () => {
-  // "abuzar@Bluebillionaireai.com";
   const companyDetails = {
-    email: "remeesreme4u@gmail.com",
+    email: "abuzar@Bluebillionaireai.com",
   };
   const [values, setValues] = useState({
     name: "",
