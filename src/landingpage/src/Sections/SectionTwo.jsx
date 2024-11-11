@@ -18,7 +18,7 @@ import Button from "../Components/Button/Buttton";
 import PropTypes from "prop-types";
 import { useEffect, useRef, useState } from "react";
 
-const SectionTwo = ({ page }) => {
+const SectionTwo = ({ page, scrollToSection, contactRef }) => {
   const [isInView, setIsInView] = useState(false);
   const imageRef = useRef(null);
   // const imageTwoRef = useRef(null);
@@ -85,13 +85,21 @@ const SectionTwo = ({ page }) => {
             Get Started
           </button> */}
           <div>
-            {/* <Link to="/contactus"> */}
-            <Button
-              buttonName="Get Started"
-              border={true}
-              // divStyle={"max-w-[200px]"}
-            />
-            {/* </Link> */}
+            <div
+              className="w-fit"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection(contactRef);
+              }}
+            >
+              {/* <Link to="/contactus"> */}
+              <Button
+                buttonName="Get Started"
+                border={true}
+                // divStyle={"max-w-[200px]"}
+              />
+              {/* </Link> */}
+            </div>
           </div>
         </div>
       </div>

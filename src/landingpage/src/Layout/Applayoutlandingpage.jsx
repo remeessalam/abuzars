@@ -38,7 +38,12 @@ const Applayoutlandingpage = ({ page }) => {
               <Section page={page} />
             </div>
             <div ref={aboutRef}>
-              <SectionTwo page={page} ref={servicesRef} />
+              <SectionTwo
+                page={page}
+                ref={servicesRef}
+                scrollToSection={scrollToSection}
+                contactRef={contactRef}
+              />
             </div>
             <div ref={servicesRef}>
               <SectionServices page={page} ref={servicesRef} />
