@@ -35,20 +35,21 @@ const Footer = () => {
           <div className="flex justify-center items-center bg-[#E8BA20] rounded-full w-[48px] h-[48px]">
             <img src={youtubevector} alt="" />
           </div>
-          <Link to={"https://x.com/Bluelionai?t=jarE8-Gn7Mj8MDQEp_gsUw&s=08"}>
-            <div className="flex justify-center items-center bg-[#E8BA20] rounded-full w-[48px] h-[48px]">
-              <img src={twittervector} alt="" />
-            </div>
-          </Link>
-          <Link
+          {/* <Link to={"https://x.com/Bluelionai?t=jarE8-Gn7Mj8MDQEp_gsUw&s=08"}> */}
+          <div className="flex justify-center items-center bg-[#E8BA20] rounded-full w-[48px] h-[48px]">
+            <img src={twittervector} alt="" />
+          </div>
+          {/* </Link> */}
+          {/* <Link 
             to={
               "https://www.instagram.com/a_b_u_z_a_r_m/profilecard/?igsh=MXBnd3Rkd3VucXpsOQ=="
             }
           >
-            <div className="flex justify-center items-center bg-[#E8BA20] rounded-full w-[48px] h-[48px]">
-              <img src={instagramvector} alt="" />
-            </div>
-          </Link>
+          */}
+          <div className="flex justify-center items-center bg-[#E8BA20] rounded-full w-[48px] h-[48px]">
+            <img src={instagramvector} alt="" />
+          </div>
+          {/* </Link> */}
         </div>
       </div>
       <div className="lg:w-1/4 md:w-1/2 md:pt-[122px] sm:my-0 my-6">
@@ -70,29 +71,7 @@ const Footer = () => {
           </ul>
         </h2>
       </div>
-      {/* <div className="lg:w-1/4 md:w-1/2 md:pt-[122px]">
-        <h2 className="font-semibold text-2xl">
-          Support
-          <ul className="mt-3">
-            <li className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg">
-              <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
-              Help Center
-            </li>
-            <li className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg">
-              <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
-              FAQ
-            </li>
-            <li className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg">
-              <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
-              Privacy Policy
-            </li>
-            <li className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg">
-              <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
-              Terms and Condition
-            </li>
-          </ul>
-        </h2>
-      </div> */}
+
       <div className="lg:w-1/4 md:w-1/2 md:pt-[122px]">
         <h2 className="font-semibold text-2xl">
           Contact Us
@@ -102,16 +81,15 @@ const Footer = () => {
               Office Address:
             </li>
             <li className="flex items-center ml-7 gap-3 text-[#B5B3B3] font-medium text-lg">
-              Wework, salarpuria symbiosis, Bannerghatta Rd, Venugopal Reddy
-              Layout, Arekere, Bengaluru, Karnataka 560076
+              1234 Innovation Drive Suite 200 TechCity, CA 94043 United States
             </li>
             <li className="flex items-center gap-3 text-[#B5B3B3] font-medium text-lg">
               <img src={message} alt="" className="h-[18px] w-[18px]" />
-              abuzar@Bluebillionaireai.com
+              abc@example.com
             </li>
             <li className="flex items-center gap-3 text-[#B5B3B3] font-medium text-lg">
               <img src={callvector} alt="" className="h-[18px] w-[18px]" />
-              +91 9666296965
+              +91 1122334455
             </li>
           </ul>
         </h2>

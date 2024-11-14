@@ -1,8 +1,8 @@
 // import imageone from "../../../assets/png/sectioneightimageone.png";
 // import imagetwo from "../../../assets/png/sectioneightimagetwo.png";
 // import imagethree from "../../../assets/png/sectioneightimagethree.png";
-import abuzar from "../../../assets/png/abuzar.png";
-import abuzartwo from "../../../assets/png/Abuzar-three.jpeg";
+import abuzar from "../../../assets/images/dummyimage.jpg";
+import abuzartwo from "../../../assets/images/dummyimage.jpg";
 import sectioneifhtbg from "../../../assets/images/sectioneifhtbg.jpeg";
 import Button from "../../../component/Button/Button";
 // import Button from "../../../component/Button/Button";
@@ -54,12 +54,12 @@ const SectionEight = () => {
               className={
                 "border w-[90%] border-[#505362] text-white   rounded-lg px-[25px] py-[8px] font-normal text-base transition-transform duration-200 hover:scale-105"
               }
-              onClick={() =>
-                window.open(
-                  "https://hindustanbusinesstimes.com/2024/10/21/bluebillionaire-ais-ai-tools-revolutionize-healthcare-management/",
-                  "_blank"
-                )
-              }
+              // onClick={() =>
+              //   window.open(
+              //     "https://hindustanbusinesstimes.com/2024/10/21/bluebillionaire-ais-ai-tools-revolutionize-healthcare-management/",
+              //     "_blank"
+              //   )
+              // }
             >
               Learn more
             </button>
@@ -92,11 +92,11 @@ const SectionEight = () => {
               className={
                 "border w-[90%] border-[#505362] text-white   rounded-lg px-[25px] py-[8px] font-normal text-base transition-transform duration-200 hover:scale-105"
               }
-              onClick={() =>
-                window.open(
-                  "https://entrepreneurstreet.in/how-abuzars-education-shaped-his-ai-career/"
-                )
-              }
+              // onClick={() =>
+              //   window.open(
+              //     "https://entrepreneurstreet.in/how-abuzars-education-shaped-his-ai-career/"
+              //   )
+              // }
             >
               Learn more
             </button>

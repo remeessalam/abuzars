@@ -8,12 +8,7 @@ import location from "../assets/svg/location.svg";
 import message from "../assets/svg/message.svg";
 import callvector from "../assets/svg/callvector.svg";
 import { Link } from "react-router-dom";
-const Footer = ({
-  homeRef,
-  aboutRef,
-
-  scrollToSection,
-}) => {
+const Footer = ({ homeRef, aboutRef, scrollToSection }) => {
   return (
     <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center mt-60 md:gap-7 gap-3 bg-[#060F1A] text-white sm:px-20 px-10 py-8 sm:py-16">
       <div className="lg:w-1/4 md:w-1/2 ">
@@ -54,60 +49,31 @@ const Footer = ({
         <h2 className="font-semibold text-2xl">
           Company
           <ul className="mt-3">
-            {/* <Link to="/"> */}
             <li
               onClick={(e) => {
-                e.preventDefault(); // Prevent default anchor behavior
-                scrollToSection(homeRef); // Call the scroll function
+                e.preventDefault();
+                scrollToSection(homeRef);
               }}
               className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg"
             >
               <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
               Homepage
             </li>
-            {/* </Link> */}
-            {/* <Link to="/about"> */}
+
             <li
               onClick={(e) => {
-                e.preventDefault(); // Prevent default anchor behavior
-                scrollToSection(aboutRef); // Call the scroll function
+                e.preventDefault();
+                scrollToSection(aboutRef);
               }}
               className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg"
             >
               <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
               About Us
             </li>
-            {/* </Link> */}
-            {/* <li className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg">
-              <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
-              Our Team
-            </li> */}
           </ul>
         </h2>
       </div>
-      {/* <div className="lg:w-1/4 md:w-1/2 md:pt-[122px]">
-        <h2 className="font-semibold text-2xl">
-          Support
-          <ul className="mt-3">
-            <li className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg">
-              <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
-              Help Center
-            </li>
-            <li className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg">
-              <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
-              FAQ
-            </li>
-            <li className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg">
-              <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
-              Privacy Policy
-            </li>
-            <li className="flex items-center gap-1 text-[#B5B3B3] font-medium text-lg">
-              <img src={rightarrow} alt="" className="h-[18px] w-[18px]" />
-              Terms and Condition
-            </li>
-          </ul>
-        </h2>
-      </div> */}
+
       <div className="lg:w-1/4 md:w-1/2 md:pt-[122px]">
         <h2 className="font-semibold text-2xl">
           Contact Us
@@ -117,16 +83,15 @@ const Footer = ({
               Office Address:
             </li>
             <li className="flex items-center ml-7 gap-3 text-[#B5B3B3] font-medium text-lg">
-              Wework, salarpuria symbiosis, Bannerghatta Rd, Venugopal Reddy
-              Layout, Arekere, Bengaluru, Karnataka 560076
+              1234 Innovation Drive Suite 200 TechCity, CA 94043 United States
             </li>
             <li className="flex items-center gap-3 text-[#B5B3B3] font-medium text-lg">
               <img src={message} alt="" className="h-[18px] w-[18px]" />
-              abuzar@Bluebillionaireai.com
+              abc@example.com
             </li>
             <li className="flex items-center gap-3 text-[#B5B3B3] font-medium text-lg">
               <img src={callvector} alt="" className="h-[18px] w-[18px]" />
-              +91 9666296965
+              +91 1122334455
             </li>
           </ul>
         </h2>

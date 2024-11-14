@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
-import userimage from "../../../assets/images/userimage.jpeg";
-import userimage2 from "../../../assets/images/userimage2.jpeg";
+import userimage from "../../../assets/images/dummyimage.jpg";
+import userimage2 from "../../../assets/images/dummyimage.jpg";
 import linkedinvector from "../../../assets/svg/linkedinvector.svg";
 const SectionThree = () => {
   const { ref: refOne, inView: inViewOne } = useInView({
@@ -35,14 +35,14 @@ const SectionThree = () => {
           />
           <div className="flex flex-col px-5 items-center py-3">
             <h3 className="flex w-full gap-3 justify-center items-center text-[#F1D578]  font-bold text-xl">
-              Mohammed Abuzar Ahmed
+              David
               <span className="w-8 h-8 flex justify-center items-center">
                 <img src={linkedinvector} alt="" />
               </span>
             </h3>
             <p className="text-center text-2xl font-bold">
               Ceo/Chairman/Founder of <br />
-              BlueBillionaire.ai
+              abc.ai
             </p>
           </div>
         </div>
@@ -54,14 +54,14 @@ const SectionThree = () => {
           />
           <div className="flex flex-col px-5 items-center py-3">
             <h3 className="flex w-full gap-3 justify-center items-center text-[#F1D578]  font-bold text-xl">
-              Mohammed Sohail
+              Rayan
               <span>
                 <img src={linkedinvector} alt="" />
               </span>
             </h3>
             <p className="text-center text-2xl font-bold">
               Legal Head of <br />
-              BlueBillionaire.ai
+              abc.ai
             </p>
           </div>
         </div>
@@ -72,7 +72,7 @@ const SectionThree = () => {
       >
         <ul className="flex flex-col gap-4 text-[#BABCC6] font-normal text-base w-[90%] sm:w-[70%]">
           <li>
-            · Abuzar’s journey in the world of artificial intelligence can be
+            · happy journey in the world of artificial intelligence can be
             traced back to his formative years and academic pursuits. Born on
             June 27, 1994, Ahmed pursued a Bachelor of Science degree in Visual
             Communication, which gave him an interdisciplinary foundation in
