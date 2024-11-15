@@ -5,6 +5,7 @@ import Button from "../../../component/Button/Button";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { useInView } from "react-intersection-observer";
+import logo from "../../../assets/svg/Logo.png";
 
 const animation = { duration: 20000, easing: (t) => t };
 
@@ -102,7 +103,7 @@ const Section = () => {
             className="keen-slider__slide"
             // style={{ maxWidth: "100px !important" }}
           >
-            <img src={Component} alt={`Slide ${idx + 1} h-[28px]`} />
+            <img src={logo} alt={`Slide ${idx + 1} h-[28px]`} />
           </div>
         ))}
         <div className="absolute top-0 right-0 w-28 h-full bg-gradient-to-l from-[#080719] to-transparent pointer-events-none z-10"></div>

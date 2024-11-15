@@ -17,6 +17,7 @@ import Modal from "../../../component/Modal/Modal";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
+import logo from "../../../assets/svg/Logo.png";
 
 const animation = { duration: 20000, easing: (t) => t };
 
@@ -190,13 +191,13 @@ const Section = () => {
 
             <div
               ref={sliderRef}
-              className="relative flex  mt-[24px] keen-slider"
+              className="relative flex h-[235px]  mt-[24px] keen-slider"
             >
               <div className="absolute top-0 left-0 w-28 h-full bg-gradient-to-r from-[#080719] to-transparent pointer-events-none z-10"></div>
 
               {[...Array(10)].map((_, idx) => (
                 <div key={idx} className="keen-slider__slide">
-                  <img src={Component} alt={`Slide ${idx + 1} h-[28px]`} />
+                  <img src={logo} alt={`Slide ${idx + 1} h-[28px]`} />
                 </div>
               ))}
               <div className="absolute top-0 right-0 w-28 h-full bg-gradient-to-l from-[#080719] to-transparent pointer-events-none z-10"></div>

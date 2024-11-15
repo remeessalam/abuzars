@@ -3,6 +3,7 @@ import homePageImage1 from "../../../assets/images/homePageImage1.jpeg";
 import homePageBottomImage from "../../../assets/images/homePageBottomImage.jpeg";
 import Component from "../../../assets/svg/Component4.svg";
 import Button from "../../../component/Button/Button";
+import logo from "../../../assets/svg/Logo.png";
 // import ThreeDCardDemo from "../../../component/ThreeD/ThreeDCardDemo";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
@@ -115,7 +116,7 @@ const Section = () => {
 
       <div
         ref={sliderRef}
-        className="relative flex  h-[70px] pt-4 mt-[24px] keen-slider"
+        className="relative flex  h-[185px] pt-4 mt-[24px] keen-slider"
       >
         <div className="absolute top-0 left-0 w-28 h-full bg-gradient-to-r from-[#080719] to-transparent pointer-events-none z-10"></div>
 
@@ -125,7 +126,7 @@ const Section = () => {
             className="keen-slider__slide "
             // style={{ maxWidth: "100px !important" }}
           >
-            <img src={Component} alt={`Slide ${idx + 1}`} />
+            <img src={logo} alt={`Slide ${idx + 1}`} />
           </div>
         ))}
         <div className="absolute top-0 right-0 w-28 h-full bg-gradient-to-l from-[#080719] to-transparent pointer-events-none z-10"></div>

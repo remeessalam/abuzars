@@ -9,7 +9,8 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-
+import logo from "../assets/svg/Logo.png";
+// /assets/svg/Logo.png
 const animation = { duration: 20000, easing: (t) => t };
 
 const Section = ({ page }) => {
@@ -98,7 +99,7 @@ const Section = ({ page }) => {
 
       <div
         ref={sliderRef}
-        className="relative flex  h-[28px] mt-[24px] keen-slider"
+        className="relative flex  h-[170px] mt-[24px] keen-slider"
       >
         <div className="absolute top-0 left-0 w-28 h-full bg-gradient-to-r from-[#080719] to-transparent pointer-events-none z-10"></div>
 
@@ -108,7 +109,7 @@ const Section = ({ page }) => {
             className="keen-slider__slide "
             // style={{ maxWidth: "100px !important" }}
           >
-            <img src={Component} alt={`Slide ${idx + 1}`} />
+            <img src={logo} alt={`Slide ${idx + 1}`} />
           </div>
         ))}
         <div className="absolute top-0 right-0 w-28 h-full bg-gradient-to-l from-[#080719] to-transparent pointer-events-none z-10"></div>
