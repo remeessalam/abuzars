@@ -7,6 +7,7 @@ import SectionTwo from "../Sections/SectionTwo";
 import SectionThree from "../../../pages/HomePage/Sections/SectionThree";
 import { SectionFour } from "../Sections/SectionFour";
 import SectionServices from "../Sections/SectionServices";
+import Form from "../Components/Form/Form";
 
 const Applayoutlandingpage = ({ page }) => {
   const homeRef = useRef(null);
@@ -36,6 +37,9 @@ const Applayoutlandingpage = ({ page }) => {
           <div className="bg-[#080719] text-white">
             <div ref={homeRef}>
               <Section page={page} />
+            </div>
+            <div>
+              <Form />
             </div>
             <div ref={aboutRef}>
               <SectionTwo
