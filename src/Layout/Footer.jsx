@@ -7,6 +7,7 @@ import rightarrow from "../assets/svg/rightarrow.svg";
 import location from "../assets/svg/location.svg";
 import message from "../assets/svg/message.svg";
 import callvector from "../assets/svg/callvector.svg";
+import linkedinoround from "../assets/svg/linkedinoround.svg";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
@@ -38,6 +39,20 @@ const Footer = () => {
           <Link to={"https://x.com/Bluelionai?t=jarE8-Gn7Mj8MDQEp_gsUw&s=08"}>
             <div className="flex justify-center items-center bg-[#E8BA20] rounded-full w-[48px] h-[48px]">
               <img src={twittervector} alt="" />
+            </div>
+          </Link>
+          <Link
+            to={
+              "https://www.linkedin.com/in/abuzar-ahmed-1a2a7a233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            }
+          >
+            <div className="flex justify-center items-center bg-[#E8BA20] rounded-full w-[48px] h-[48px]">
+              <img
+                src={linkedinoround}
+                alt="linkedinoround"
+                width={21}
+                height={21}
+              />
             </div>
           </Link>
           <Link

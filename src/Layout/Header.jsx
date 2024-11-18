@@ -2,9 +2,11 @@ import { useState } from "react";
 import Logo from "../assets/svg/Logo.png";
 import menuIcon from "../assets/svg/menuIcon.svg";
 import Button from "../component/Button/Button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const location = useLocation(); // Get the current path
+
   return (
     <div className="fixed top-0 w-full z-20">
       <div className="flex  justify-center bg-[#080719] w-full h-28 text-white font-normal text-sm transition-all duration-200">
@@ -23,16 +25,50 @@ const Header = () => {
           <div className="md:flex hidden ">
             <ul className="flex gap-10">
               <li>
-                <Link to="/">Home</Link>
+                <Link
+                  to="/"
+                  className={`${
+                    location.pathname === "/" ? "text-blue-300" : "text-white"
+                  }`}
+                >
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link
+                  to="/about"
+                  className={`${
+                    location.pathname === "/about"
+                      ? "text-blue-300"
+                      : "text-white"
+                  }`}
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/services">Sevices</Link>
+                <Link
+                  to="/services"
+                  className={`${
+                    location.pathname === "/services"
+                      ? "text-blue-300"
+                      : "text-white"
+                  }`}
+                >
+                  Services
+                </Link>
               </li>
               <li>
-                <Link to="/contactus"> Contact</Link>
+                <Link
+                  to="/contactus"
+                  className={`${
+                    location.pathname === "/contactus"
+                      ? "text-blue-300"
+                      : "text-white"
+                  }`}
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
